@@ -2,14 +2,14 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="relative bg-sky-400 min-h-screen flex items-center pt-24">
+    <section className="relative bg-sky-400 min-h-screen flex items-center pt-32">
       <div className="absolute inset-0 z-0 opacity-20">
         <div className="w-full h-full relative">
           {/* Background pattern elements will go here */}
-          <div className="absolute top-[20%] left-[10%] w-16 h-16 rounded-full border-2 border-white"></div>
-          <div className="absolute top-[40%] right-[15%] w-20 h-20 rounded-full border-2 border-white"></div>
-          <div className="absolute bottom-[20%] left-[20%] w-24 h-24 rounded-full border-2 border-white"></div>
-          <div className="absolute top-[60%] right-[25%] w-16 h-16 rounded-full border-2 border-white"></div>
+          <div className="absolute top-[20%] left-[10%] w-16 h-16 rounded-full border-2 border-gray-200"></div>
+          <div className="absolute top-[40%] right-[15%] w-20 h-20 rounded-full border-2 border-gray-200"></div>
+          <div className="absolute bottom-[20%] left-[20%] w-24 h-24 rounded-full border-2 border-gray-200"></div>
+          <div className="absolute top-[60%] right-[25%] w-16 h-16 rounded-full border-2 border-gray-200"></div>
         </div>
       </div>
 
@@ -32,9 +32,9 @@ export default function Hero() {
         <div className="md:w-1/2 relative">
           {/* Image placeholder - you'll add the actual image later */}
           <div className="w-full h-[400px] md:h-[500px] relative">
-            <div className="w-full h-full bg-sky-300 rounded-lg relative overflow-hidden">
+            <div className="w-full h-full bg-gray-100 rounded-lg relative overflow-hidden">
               {/* You'll replace this with an actual Image component once you have the dog image */}
-              <div className="absolute inset-0 flex items-center justify-center text-white text-lg">
+              <div className="absolute inset-0 flex items-center justify-center text-gray-500 text-lg">
                 Dog image will go here
               </div>
             </div>

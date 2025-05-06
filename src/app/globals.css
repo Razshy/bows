@@ -3,6 +3,9 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --navbar-bg: #ffffff;
+  --navbar-text: #171717;
+  --navbar-shadow: rgba(0, 0, 0, 0.1);
 }
 
 @theme inline {
@@ -14,8 +17,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: none;
   }
 }
 
@@ -25,9 +27,11 @@ body {
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
 
-/* Navbar styling */
-nav {
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+
+/* Add padding to body to account for fixed navbar */
+body {
+  padding-top: 80px;
 }
 
 /* Dropdown menu styling */
