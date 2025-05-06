@@ -2,35 +2,19 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
+import { useState,  } from 'react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [treatsDropdownOpen, setTreatsDropdownOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
 
   // Handle scroll event to change navbar appearance
-  useEffect(() => {
-    const handleScroll = () => {
-      const isScrolled = window.scrollY > 50;
-      if (isScrolled !== scrolled) {
-        setScrolled(isScrolled);
-      }
-    };
 
-    // Add scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Clean up event listener
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [scrolled]);
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className={`container mx-auto px-4 ${scrolled ? 'py-1' : 'py-3'} md:px-6 lg:px-8 transition-all duration-300`}>
-        <nav className={`flex items-center justify-between ${scrolled ? 'py-2' : 'py-4'} px-5 md:px-6 w-full bg-white rounded-md shadow-sm transition-all duration-300`}>
+      <div className={`container mx-auto px-4 py-3 md:px-6 lg:px-8 transition-all duration-300`}>
+        <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white rounded-md shadow-sm transition-all duration-300 border-2 border-[#6bcbeb]`}>
         {/* Logo/Brand (Left Section) */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -136,7 +120,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute left-0 right-0 bg-white shadow-md z-20 py-4 px-6 mt-2 rounded-md dropdown-menu">
+        <div className="md:hidden absolute left-0 right-0 bg-white shadow-md z-20 py-4 px-6 mt-2 rounded-md dropdown-menu border-2 border-[#6bcbeb]">
           <div className="flex flex-col space-y-4">
             <Link
               href="/about"
