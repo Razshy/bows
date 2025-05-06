@@ -1,0 +1,207 @@
+"use client";
+
+import Link from 'next/link';
+import Image from 'next/image';
+import { useState } from 'react';
+
+export default function Navbar() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [treatsDropdownOpen, setTreatsDropdownOpen] = useState(false);
+
+  return (
+    <div className="px-4 py-3 md:px-6 lg:px-8">
+      <nav className="flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white rounded-full shadow-sm">
+        {/* Logo/Brand (Left Section) */}
+        <div className="flex items-center">
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/branding/logo.svg"
+              alt="Bubbles & Bows"
+              width={36}
+              height={36}
+              className="mr-2"
+            />
+            <span className="text-xl font-bold text-gray-800">Bubbles & Bows</span>
+          </Link>
+        </div>
+
+        {/* Navigation Links (Center Section) - Desktop */}
+        <div className="hidden md:flex items-center justify-center space-x-8">
+          <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            About
+          </Link>
+
+          {/* Treats with dropdown */}
+          <div className="relative">
+            <button
+              className="flex items-center text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+              onClick={() => setTreatsDropdownOpen(!treatsDropdownOpen)}
+            >
+              Treats
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-4 w-4 ml-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {/* Treats dropdown menu */}
+            {treatsDropdownOpen && (
+              <div className="absolute top-full left-0 mt-1 w-40 bg-white rounded-md shadow-lg z-20 dropdown-menu">
+                <div className="py-1">
+                  <Link
+                    href="/treats/chew-toys"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setTreatsDropdownOpen(false)}
+                  >
+                    Chew Toys
+                  </Link>
+                  <Link
+                    href="/treats/snacks"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setTreatsDropdownOpen(false)}
+                  >
+                    Snacks
+                  </Link>
+                  <Link
+                    href="/treats/biscuits"
+                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                    onClick={() => setTreatsDropdownOpen(false)}
+                  >
+                    Biscuits
+                  </Link>
+                </div>
+              </div>
+            )}
+          </div>
+
+          <Link href="/training" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            Training
+          </Link>
+          <Link href="/accessories" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            Accessories
+          </Link>
+          <Link href="/grooming" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            Grooming
+          </Link>
+        </div>
+
+        {/* Mobile menu button */}
+        <div className="md:hidden flex items-center">
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="text-gray-700 hover:text-gray-900"
+            aria-label="Toggle mobile menu"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={mobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"} />
+            </svg>
+          </button>
+        </div>
+
+        {/* Book Now Button (Right Section) */}
+        <div className="hidden md:flex items-center">
+          <Link
+            href="/book-now"
+            className="border-2 border-gray-800 text-gray-800 px-5 py-2 rounded-full hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold"
+          >
+            Book Now
+          </Link>
+        </div>
+      </nav>
+
+      {/* Mobile menu dropdown */}
+      {mobileMenuOpen && (
+        <div className="md:hidden absolute left-0 right-0 bg-white shadow-md z-20 py-4 px-6 mt-2 mx-4 rounded-lg dropdown-menu">
+          <div className="flex flex-col space-y-4">
+            <Link
+              href="/about"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              About
+            </Link>
+
+            {/* Mobile Treats dropdown */}
+            <div>
+              <button
+                className="flex items-center text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+                onClick={() => setTreatsDropdownOpen(!treatsDropdownOpen)}
+              >
+                Treats
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-4 w-4 ml-1"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={treatsDropdownOpen ? "M5 15l7-7 7 7" : "M19 9l-7 7-7-7"} />
+                </svg>
+              </button>
+
+              {treatsDropdownOpen && (
+                <div className="pl-4 mt-2 space-y-2 dropdown-menu">
+                  <Link
+                    href="/treats/chew-toys"
+                    className="block text-sm text-gray-700 hover:text-gray-900"
+                    onClick={() => {setMobileMenuOpen(false); setTreatsDropdownOpen(false);}}
+                  >
+                    Chew Toys
+                  </Link>
+                  <Link
+                    href="/treats/snacks"
+                    className="block text-sm text-gray-700 hover:text-gray-900"
+                    onClick={() => {setMobileMenuOpen(false); setTreatsDropdownOpen(false);}}
+                  >
+                    Snacks
+                  </Link>
+                  <Link
+                    href="/treats/biscuits"
+                    className="block text-sm text-gray-700 hover:text-gray-900"
+                    onClick={() => {setMobileMenuOpen(false); setTreatsDropdownOpen(false);}}
+                  >
+                    Biscuits
+                  </Link>
+                </div>
+              )}
+            </div>
+
+            <Link
+              href="/training"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Training
+            </Link>
+            <Link
+              href="/accessories"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Accessories
+            </Link>
+            <Link
+              href="/grooming"
+              className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Grooming
+            </Link>
+            <Link
+              href="/book-now"
+              className="border-2 border-gray-800 text-gray-800 px-5 py-2 rounded-full hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold inline-block w-fit"
+              onClick={() => setMobileMenuOpen(false)}
+            >
+              Book Now
+            </Link>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+}
