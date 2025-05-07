@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 export default function Services() {
   return (
-    <section className="py-16 px-6 md:px-12 bg-white" id="services">
+    <section className=" max-w-[90rem] mx-auto py-16 px-6 md:px-12 bg-white" id="services">
       <div className="container mx-auto">
         {/* Top info cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">

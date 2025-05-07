@@ -9,30 +9,34 @@ export default function Hero() {
     <div className="relative">
       {/* Main hero section */}
       <section className="relative pt-40 pb-24 overflow-hidden mt-0 backdrop-blur-[2px] bg-white/10 min-h-[600px] md:min-h-[650px] lg:min-h-[700px]">
-        <div className="container mx-auto px-6 md:px-12 relative z-10 flex flex-col md:flex-row items-center">
+        <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10 flex flex-col md:flex-row items-center">
           {/* Left side content */}
           <div className="md:w-[45%] mb-12 md:mb-0 relative">
-            {/* Text content container with semi-transparent backdrop */}
-            <div className="relative p-6 rounded-xl">
-              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-4 z-10 relative">
-                YOUR<br />
-                PUPP&apos;S BEST<br />
-                FRIEND
-              </h1>
+            {/* Text content container with card-based design */}
+            <div className="relative">
+              {/* Main content card with square top-left corner */}
+              <div className="relative z-10 bg-white/95 p-8 shadow-lg border border-gray-100 hero-card">
+                <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 z-10 relative tracking-tight">
+                  YOUR<br />
+                  PUPP&apos;S BEST<br />
+                  FRIEND
+                </h1>
 
-              <p className="text-gray-800 text-base mb-8 max-w-md font-medium">
-                Training, grooming to nutrition & exercise, there&apos;s<br />
-                caring worth often becomes the family.
-              </p>
+                <p className="text-gray-800 text-base mb-8 max-w-md font-medium leading-relaxed">
+                  Training, grooming to nutrition & exercise, there&apos;s<br />
+                  caring worth often becomes the family.
+                </p>
 
-              <Link
-                href="#schedule"
-                className="bg-[#fff] text-black px-6 py-3 rounded-[12px] font-medium hover:bg-[#b1f3ff] transition-colors inline-flex items-center border-2 border-gray-200 shadow-sm"
-              >
-                <span>Book a Schedule</span>
-                <span className="ml-2">
-                </span>
-              </Link>
+                <Link
+                  href="#schedule"
+                  className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+                >
+                  <span>Book a Schedule</span>
+                  <span className="ml-2">
+
+                  </span>
+                </Link>
+              </div>
             </div>
           </div>
 
@@ -77,6 +81,11 @@ export default function Hero() {
       </div>
 
       <style jsx>{`
+        /* Hero card styling with square top-left corner */
+        .hero-card {
+          border-radius: 12px;
+        }
+
         /* Wave styling */
         .wave-divider {
           position: absolute;

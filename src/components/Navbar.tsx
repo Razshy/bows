@@ -13,7 +13,7 @@ export default function Navbar() {
 
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
-      <div className={`container mx-auto px-4 py-3 md:px-6 lg:px-8 transition-all duration-300`}>
+      <div className={`max-w-[90rem] mx-auto px-4 py-3 md:px-6 lg:px-12 transition-all duration-300`}>
         <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white/80 backdrop-blur-sm shadow-sm transition-all duration-300 border-[2px] border-gray-200 rounded-[12px]`}>
         {/* Logo/Brand (Left Section) */}
         <div className="flex items-center">
