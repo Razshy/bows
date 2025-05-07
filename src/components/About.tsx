@@ -1,124 +1,101 @@
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className=" max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-white" id="about">
-      <div className="container mx-auto">
-        {/* How we serve section */}
-        <div className="mb-16">
-          <h2 className="text-3xl font-bold mb-8">HOW WE SERVE OUR PET PARENTS</h2>
-          <p className="text-gray-700 mb-8">
-            Making pet owning simpler for you. Our priority, well-equipped services is created with love.
-          </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
-            {/* Services list */}
-            <div className="col-span-2">
-              <ul className="space-y-4">
-                <li className="flex items-center">
-                  <span className="h-6 w-6 rounded-full bg-yellow-400 flex items-center justify-center mr-3">
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 text-white" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
-                  </span>
-                  <span className="font-medium">Adoption</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="h-6 w-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-3"></span>
-                  <span className="font-medium">Fostering</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="h-6 w-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-3"></span>
-                  <span className="font-medium">Vaccination</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="h-6 w-6 rounded-full border-2 border-gray-300 flex items-center justify-center mr-3"></span>
-                  <span className="font-medium">Grooming</span>
-                </li>
-              </ul>
+    <section className="max-w-[70rem] mx-auto px-4 md:px-6 py-16 bg-white" id="about">
+      <div className="testimonial-card bg-[#f5f5f5] rounded-[20px] shadow-sm overflow-hidden">
+        <div className="grid grid-cols-1 md:grid-cols-3 divide-x divide-gray-200">
+          {/* Left cell - Company introduction */}
+          <div className="p-8 md:p-10 flex flex-col">
+            <div className="mb-6">
+              <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 10C17.3726 10 12 15.3726 12 22C12 28.6274 17.3726 34 24 34C30.6274 34 36 28.6274 36 22C36 15.3726 30.6274 10 24 10Z" fill="#E5E5E5"/>
+                <path d="M18 20C19.1046 20 20 19.1046 20 18C20 16.8954 19.1046 16 18 16C16.8954 16 16 16.8954 16 18C16 19.1046 16.8954 20 18 20Z" fill="#333"/>
+                <path d="M30 20C31.1046 20 32 19.1046 32 18C32 16.8954 31.1046 16 30 16C28.8954 16 28 16.8954 28 18C28 19.1046 28.8954 20 30 20Z" fill="#333"/>
+                <path d="M24 28C21.7909 28 20 26.2091 20 24H28C28 26.2091 26.2091 28 24 28Z" fill="#333"/>
+                <path d="M36 22C36 28.6274 30.6274 34 24 34C17.3726 34 12 28.6274 12 22C12 15.3726 17.3726 10 24 10C30.6274 10 36 15.3726 36 22ZM24 32C29.5228 32 34 27.5228 34 22C34 16.4772 29.5228 12 24 12C18.4772 12 14 16.4772 14 22C14 27.5228 18.4772 32 24 32Z" fill="#333"/>
+                <path d="M24 38C22.8954 38 22 37.1046 22 36V34C22 32.8954 22.8954 32 24 32C25.1046 32 26 32.8954 26 34V36C26 37.1046 25.1046 38 24 38Z" fill="#333"/>
+                <path d="M18 38C16.8954 38 16 37.1046 16 36V34C16 32.8954 16.8954 32 18 32C19.1046 32 20 32.8954 20 34V36C20 37.1046 19.1046 38 18 38Z" fill="#333"/>
+                <path d="M30 38C28.8954 38 28 37.1046 28 36V34C28 32.8954 28.8954 32 30 32C31.1046 32 32 32.8954 32 34V36C32 37.1046 31.1046 38 30 38Z" fill="#333"/>
+              </svg>
             </div>
-            
-            {/* Animal categories */}
-            <div className="col-span-3 grid grid-cols-2 md:grid-cols-3 gap-4">
-              <div className="bg-gray-100 rounded-lg p-3 flex flex-col items-center">
-                <span className="font-bold mb-2">BIRD</span>
-                <div className="w-full h-16 rounded-full bg-yellow-200 relative">
-                  {/* Bird image placeholder */}
-                </div>
-              </div>
-              
-              <div className="bg-blue-100 rounded-lg p-3 flex flex-col items-center">
-                <span className="font-bold mb-2">CAT</span>
-                <div className="w-full h-16 rounded-full bg-blue-200 relative">
-                  {/* Cat image placeholder */}
-                </div>
-              </div>
-              
-              <div className="bg-gray-100 rounded-lg p-3 flex flex-col items-center">
-                <span className="font-bold mb-2">DOGS</span>
-                <div className="w-full h-16 rounded-full bg-gray-200 relative">
-                  {/* Dog image placeholder */}
-                </div>
-              </div>
+            <h2 className="text-2xl md:text-3xl font-black mb-4 tracking-tight leading-tight uppercase">
+              WHAT WE CARE<br />THE MOST?
+            </h2>
+            <div className="mb-4">
+              <h3 className="text-xl font-bold mb-2">PUPP&apos;S</h3>
+              <p className="text-gray-700 leading-relaxed">
+                — has a unique pet service, starts with anatomic research, analysis, and provides precise growth, and health.
+              </p>
             </div>
           </div>
-        </div>
-        
-        {/* What we care about section */}
-        <div className="bg-gray-100 rounded-lg p-8 mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-center">
-              <div className="mr-4">
-                <div className="h-16 w-16 rounded-full bg-green-100 flex items-center justify-center">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 text-green-600" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clipRule="evenodd" />
-                  </svg>
+
+          <div className="md:col-span-2">
+            <div className="grid grid-rows-2 h-full divide-y divide-gray-200">
+              {/* Top right - Testimonial header */}
+              <div className="p-8 flex flex-col justify-between">
+                <div>
+                  <p className="text-gray-500 font-medium mb-1">Clients Testimonial</p>
+                  <h3 className="text-3xl md:text-4xl font-bold">01 -</h3>
                 </div>
               </div>
-              <div>
-                <h3 className="text-xl font-bold">WHAT WE CARE THE MOST?</h3>
-              </div>
-            </div>
-            
-            <div className="md:col-span-2">
-              <div className="bg-white rounded-lg p-6 relative">
-                <h4 className="text-lg text-gray-500 mb-2">Client&apos;s Testimonial</h4>
-                <div className="flex justify-between items-start">
-                  <div className="flex-1">
-                    <div className="text-2xl font-bold mb-2">01 —</div>
-                    <div className="flex mb-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                      </svg>
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-yellow-500" viewBox="0 0 20 20" fill="currentColor">
-                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+
+              {/* Bottom section - Testimonial content and image */}
+              <div className="grid grid-cols-1 md:grid-cols-2 divide-x divide-gray-200">
+                {/* Testimonial content */}
+                <div className="p-8 flex flex-col justify-between">
+                  <div>
+                    <div className="w-10 h-10 rounded-full bg-[#ff7e5f] flex items-center justify-center mb-4">
+                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 17L13.09 11.24L19 10.27L14.5 5.96L15.5 0L10 2.73L4.5 0L5.5 5.96L1 10.27L6.91 11.24L10 17Z" fill="white"/>
                       </svg>
                     </div>
-                    <p className="text-gray-700 mb-4">
-                      Thanks to your patient to take care my Pudding in the whole week. Good job, team. We definitely will try Pooking in you in home boarding again.
+                    <p className="text-gray-700 mb-6">
+                      Thanks for your patience to take care my Pudding for the whole week. Great care taker. Will definitely want my Pudding to try home boarding again.
                     </p>
-                    <div className="font-bold">SHANNON PUPPERT</div>
-                    <div className="text-sm text-gray-500">Adventure Traveller</div>
-                  </div>
-                  
-                  <div className="ml-6">
-                    <div className="w-20 h-20 bg-gray-200 rounded-lg relative">
-                      {/* Dog image placeholder */}
+                    <div>
+                      <h4 className="font-bold text-sm tracking-wider uppercase mb-1">SHANNON PAPPERT</h4>
+                      <p className="text-gray-500 text-sm">Adventure Traveller</p>
                     </div>
                   </div>
                 </div>
-                
-                <div className="absolute bottom-6 right-6">
-                  <Link href="#" className="inline-flex items-center bg-white border-2 border-gray-300 rounded-full px-4 py-1 text-gray-800 font-medium">
-                    Book a Schedule
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                      <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                    </svg>
-                  </Link>
+
+                {/* Dog image */}
+                <div className="relative p-8 flex flex-col items-center justify-center">
+                  <div className="relative w-full h-48 rounded-[16px] overflow-hidden">
+                    <Image
+                      src="/images/frenchie.jpg"
+                      alt="French Bulldog"
+                      fill
+                      style={{ objectFit: 'cover' }}
+                      className="rounded-[16px]"
+                    />
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                      <div className="w-12 h-12 rounded-full bg-[#ff5a5f] flex items-center justify-center cursor-pointer hover:bg-[#ff7e7f] transition-colors">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 5V19L19 12L8 5Z" fill="white"/>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <p className="text-center mt-3 text-sm font-medium">Never miss a moment!</p>
+
+                  <div className="absolute bottom-8 right-8">
+                    <Link
+                      href="#schedule"
+                      className="inline-flex items-center bg-[#ffd166] text-black px-5 py-2 rounded-full font-medium hover:bg-[#ffda85] transition-all duration-300 shadow-sm"
+                    >
+                      <span>Book a Schedule</span>
+                      <span className="ml-2">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8 0.5C3.86 0.5 0.5 3.86 0.5 8C0.5 12.14 3.86 15.5 8 15.5C12.14 15.5 15.5 12.14 15.5 8C15.5 3.86 12.14 0.5 8 0.5ZM8 14C4.69 14 2 11.31 2 8C2 4.69 4.69 2 8 2C11.31 2 14 4.69 14 8C14 11.31 11.31 14 8 14Z" fill="black"/>
+                          <path d="M8.93 5.5H7.5V8.75L10.25 10.4L11 9.18L8.93 7.88V5.5Z" fill="black"/>
+                        </svg>
+                      </span>
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
