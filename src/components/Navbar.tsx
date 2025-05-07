@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className={`container mx-auto px-4 py-3 md:px-6 lg:px-8 transition-all duration-300`}>
-        <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white shadow-sm transition-all duration-300 border-[2px] border-gray-200 rounded-[12px]`}>
+        <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white/80 backdrop-blur-sm shadow-sm transition-all duration-300 border-[2px] border-gray-200 rounded-[12px]`}>
         {/* Logo/Brand (Left Section) */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -111,7 +111,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center">
           <Link
             href="/book-now"
-            className="border-2 border-gray-800 text-gray-800 px-5 py-2 rounded-full hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold"
+            className=" text-gray-800 px-5 py-2 rounded-[12px] hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold"
           >
             Book Now
           </Link>

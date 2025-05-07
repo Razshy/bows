@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: transparent;
   --foreground: #171717;
-  --navbar-bg: #ffffff;
+  --navbar-bg: transparent;
   --navbar-text: #171717;
   --navbar-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -29,9 +29,9 @@ body {
 
 
 
-/* Add padding to body to account for fixed navbar */
+/* Remove padding from body to allow proper scrolling with background */
 body {
-  padding-top: 80px;
+  padding-top: 0;
 }
 
 /* Dropdown menu styling */
