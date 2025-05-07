@@ -41,18 +41,20 @@ export default function Hero() {
             {/* Image container with subtle backdrop */}
             <div className="relative p-6 rounded-xl">
               {/* Dog image - positioned to be cut off by the wave */}
-              <div className="w-full h-[400px] md:h-[500px] relative z-10 pet-image-container">
-                <Image
-                  src="/images/pups.png"
-                  alt="Happy golden retriever"
-                  fill
-                  style={{
-                    objectFit: 'contain',
-                    objectPosition: 'center 10%'
-                  }}
-                  priority
-                  className="drop-shadow-xl"
-                />
+              <div className="w-full h-[400px] md:h-[500px] relative z-10">
+                <div className="absolute bottom-0 left-0 right-0 pet-image-wrapper">
+                  <Image
+                    src="/images/pups.png"
+                    alt="Happy golden retriever"
+                    fill
+                    style={{
+                      objectFit: 'contain',
+                      objectPosition: 'center bottom'
+                    }}
+                    priority
+                    className="drop-shadow-xl"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -75,6 +77,7 @@ export default function Hero() {
       </div>
 
       <style jsx>{`
+        /* Wave styling */
         .wave-divider {
           position: absolute;
           bottom: 0;
@@ -92,9 +95,21 @@ export default function Hero() {
           display: block;
         }
 
+        /* Pet image positioning */
+        .pet-image-wrapper {
+          height: 500px;
+          bottom: -120px; /* Align with the wave height */
+          position: absolute;
+        }
+
+        /* Responsive breakpoints */
         @media (max-width: 1440px) {
           .wave-divider {
             height: 100px;
+          }
+          .pet-image-wrapper {
+            height: 480px;
+            bottom: -100px; /* Match the wave height */
           }
         }
 
@@ -102,11 +117,26 @@ export default function Hero() {
           .wave-divider {
             height: 90px;
           }
+          .pet-image-wrapper {
+            height: 460px;
+            bottom: -90px; /* Match the wave height */
+          }
+        }
+
+        @media (max-width: 1024px) {
+          .pet-image-wrapper {
+            height: 440px;
+            bottom: -85px; /* Match the wave height */
+          }
         }
 
         @media (max-width: 768px) {
           .wave-divider {
             height: 80px;
+          }
+          .pet-image-wrapper {
+            height: 420px;
+            bottom: -80px; /* Match the wave height */
           }
         }
 
@@ -114,40 +144,9 @@ export default function Hero() {
           .wave-divider {
             height: 60px;
           }
-        }
-
-        /* Pet image positioning */
-        .pet-image-container {
-          transform: translateY(90px); /* Move image down to create cut-off effect */
-        }
-
-        @media (max-width: 1440px) {
-          .pet-image-container {
-            transform: translateY(160px);
-          }
-        }
-
-        @media (max-width: 1280px) {
-          .pet-image-container {
-            transform: translateY(250px);
-          }
-        }
-
-                @media (max-width: 1024px) {
-          .pet-image-container {
-            transform: translateY(340px);
-          }
-        }
-
-        @media (max-width: 768px) {
-          .pet-image-container {
-            transform: translateY(150px);
-          }
-        }
-
-        @media (max-width: 480px) {
-          .pet-image-container {
-            transform: translateY(40px);
+          .pet-image-wrapper {
+            height: 380px;
+            bottom: -60px; /* Match the wave height */
           }
         }
       `}</style>
