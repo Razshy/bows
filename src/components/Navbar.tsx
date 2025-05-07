@@ -34,62 +34,13 @@ export default function Navbar() {
           <Link href="/about" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
             About
           </Link>
-
-          {/* Treats with dropdown */}
-          <div className="relative">
-            <button
-              className="flex items-center text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
-              onClick={() => setTreatsDropdownOpen(!treatsDropdownOpen)}
-            >
-              Treats
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-4 w-4 ml-1"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
-              </svg>
-            </button>
-
-            {/* Treats dropdown menu */}
-            {treatsDropdownOpen && (
-              <div className="absolute top-full left-0 mt-1 w-40 bg-white shadow-lg z-20 dropdown-menu rounded-[8px]">
-                <div className="py-1">
-                  <Link
-                    href="/treats/chew-toys"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setTreatsDropdownOpen(false)}
-                  >
-                    Chew Toys
-                  </Link>
-                  <Link
-                    href="/treats/snacks"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setTreatsDropdownOpen(false)}
-                  >
-                    Snacks
-                  </Link>
-                  <Link
-                    href="/treats/biscuits"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                    onClick={() => setTreatsDropdownOpen(false)}
-                  >
-                    Biscuits
-                  </Link>
-                </div>
-              </div>
-            )}
-          </div>
-
-          <Link href="/training" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
-            Training
+          <Link href="/daycare" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            Daycare
           </Link>
-          <Link href="/accessories" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
-            Accessories
+          <Link href="/boarding" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            Boarding
           </Link>
-          <Link href="/grooming" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+          <Link href="/Grooming" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
             Grooming
           </Link>
         </div>
