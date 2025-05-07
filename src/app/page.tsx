@@ -5,6 +5,7 @@ const Navbar = dynamic(() => import('../components/Navbar'));
 const Hero = dynamic(() => import('../components/Hero'));
 const About = dynamic(() => import('../components/About'));
 const GroomedCollection = dynamic(() => import('../components/GroomedCollection'));
+const CtaSection = dynamic(() => import('../components/CtaSection'));
 const Footer = dynamic(() => import('../components/Footer'));
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
         <Hero />
         <GroomedCollection />
         <About />
+        <CtaSection />
         <Footer />
       </main>
     </div>
