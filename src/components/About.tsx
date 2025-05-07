@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <section className="max-w-[70rem] mx-auto px-4 md:px-6 py-16 bg-white" id="about">
+    <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-white" id="about">
       <div className="testimonial-card bg-[#f5f5f5] rounded-[20px] shadow-sm overflow-hidden">
         <div className="grid grid-cols-1 md:grid-cols-3 divide-x divide-gray-200">
           {/* Left cell - Company introduction */}

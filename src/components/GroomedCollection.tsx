@@ -8,11 +8,11 @@ export default function GroomedCollection() {
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-start justify-between mb-12">
           <h2 className="text-4xl md:text-5xl font-black mb-6 md:mb-0 leading-tight tracking-tight">
-            WELL GROOMED<br />PET COLLECTION
+            WE GROOM
           </h2>
           <div className="max-w-xs">
             <p className="text-gray-700">
-              We have huge collection of domestic animal.
+              We have 22 years of grooming experience.
             </p>
           </div>
         </div>
