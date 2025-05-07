@@ -17,14 +17,14 @@ export default function Hero() {
               {/* Main content card with square top-left corner */}
               <div className="relative z-10 bg-white/95 p-8 shadow-lg border border-gray-100 hero-card">
                 <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 z-10 relative tracking-tight">
-                  YOUR<br />
-                  PUPP&apos;S BEST<br />
-                  FRIEND
+                  YOUR PET&apos;S<br />
+                  HAPPY<br />
+                  PLACE
                 </h1>
 
                 <p className="text-gray-800 text-base mb-8 max-w-md font-medium leading-relaxed">
-                  Training, grooming to nutrition & exercise, there&apos;s<br />
-                  caring worth often becomes the family.
+                  Professional grooming and care services that treat<br />
+                  your furry friends like family.
                 </p>
 
                 <Link
