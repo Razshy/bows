@@ -14,7 +14,7 @@ export default function Navbar() {
   return (
     <div className="fixed top-0 left-0 right-0 z-50">
       <div className={`container mx-auto px-4 py-3 md:px-6 lg:px-8 transition-all duration-300`}>
-        <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white rounded-md shadow-sm transition-all duration-300 border-2 border-[#6bcbeb]`}>
+        <nav className={`flex items-center justify-between py-4 px-5 md:px-6 w-full bg-white shadow-sm transition-all duration-300 border-[2px] border-gray-200 rounded-[12px]`}>
         {/* Logo/Brand (Left Section) */}
         <div className="flex items-center">
           <Link href="/" className="flex items-center">
@@ -55,7 +55,7 @@ export default function Navbar() {
 
             {/* Treats dropdown menu */}
             {treatsDropdownOpen && (
-              <div className="absolute top-full left-0 mt-1 w-40 bg-white rounded-md shadow-lg z-20 dropdown-menu">
+              <div className="absolute top-full left-0 mt-1 w-40 bg-white shadow-lg z-20 dropdown-menu rounded-[8px]">
                 <div className="py-1">
                   <Link
                     href="/treats/chew-toys"
@@ -120,7 +120,7 @@ export default function Navbar() {
 
       {/* Mobile menu dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute left-0 right-0 bg-white shadow-md z-20 py-4 px-6 mt-2 rounded-md dropdown-menu border-2 border-[#6bcbeb]">
+        <div className="md:hidden absolute left-0 right-0 bg-white shadow-md z-20 py-4 px-6 mt-2 dropdown-menu border-2 border-[#6bcbeb] rounded-[8px]">
           <div className="flex flex-col space-y-4">
             <Link
               href="/about"
