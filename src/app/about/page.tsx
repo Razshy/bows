@@ -139,7 +139,7 @@ export default function AboutPage() {
               <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-10 text-white">
                 <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">GET IN TOUCH</h3>
                 <p className="mb-8 text-white text-lg leading-relaxed">
-                  Ready to book? Have questions? We're here to help.
+                  Ready to book? Have questions? We&apos;re here to help.
                 </p>
                 <div className="space-y-4 mb-8">
                   <a href="tel:+17639723647" className="block text-white hover:text-white/90 transition-colors">
