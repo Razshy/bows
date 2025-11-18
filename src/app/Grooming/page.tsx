@@ -8,15 +8,6 @@ const Navbar = dynamic(() => import('../../components/Navbar'));
 const Footer = dynamic(() => import('../../components/Footer'));
 const GroomedCollection = dynamic(() => import('../../components/GroomedCollection'));
 
-const services = [
-  { title: 'Nail Trim & Dremmel', desc: 'Smooth, snag-free paws' },
-  { title: 'Pads & Sanitary', desc: 'Shaved and trimmed by request' },
-  { title: 'Ear Cleaning', desc: 'Gentle and thorough care' },
-  { title: 'Teeth Brushing', desc: 'Fresh breath' },
-  { title: 'Gland Expression', desc: 'Anal gland care' },
-  { title: 'Bath & Style', desc: 'Blow dry and custom styling' },
-];
-
 export default function GroomingPage() {
   return (
     <div className="relative">
@@ -220,7 +211,7 @@ export default function GroomingPage() {
                   MEET TONI BROSE
                 </h2>
                 <p className="text-gray-800 text-lg leading-relaxed mb-8">
-                  I've been grooming for 22 years. Breed cuts, creative styles, anxious pets—I've seen it all and know how to handle each one.
+                  I&apos;ve been grooming for 22 years. Breed cuts, creative styles, anxious pets—I&apos;ve seen it all and know how to handle each one.
                 </p>
                 <div className="space-y-3 text-gray-700 text-base leading-relaxed">
                   <p>Two decades of hands-on experience</p>
@@ -234,7 +225,7 @@ export default function GroomingPage() {
               <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-10 text-white">
                 <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">BOOK TODAY</h3>
                 <p className="mb-8 text-white text-lg leading-relaxed">
-                  Ready to schedule? Call or book online and we'll discuss what your pet needs.
+                  Ready to schedule? Call or book online and we&apos;ll discuss what your pet needs.
                 </p>
                 <div className="space-y-4 mb-8">
                   <a href="tel:+17639723647" className="block text-white hover:text-white/90 transition-colors">
