@@ -190,7 +190,7 @@ export default function BoardingPage() {
                   BOARDING<br />PACKAGES
                 </h2>
                 <p className="text-gray-700 text-lg">
-                  Pick the suite that fits your pup's personality
+                  Pick the suite that fits your pup&apos;s personality
                 </p>
               </div>
               <div className="bg-[#b1f3ff] border-2 border-gray-200 rounded-[12px] px-6 py-5">

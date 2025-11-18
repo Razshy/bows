@@ -248,7 +248,7 @@ export default function DaycarePage() {
             <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-12 text-white text-center">
               <h3 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">READY TO PLAY?</h3>
               <p className="mb-8 text-white text-lg max-w-2xl mx-auto">
-                Book online or call us to schedule your pup's first day.
+                Book online or call us to schedule your pup&apos;s first day.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
                 <a href="tel:+17639723647" className="text-white hover:text-white/90 transition-colors">

@@ -41,7 +41,7 @@ export default function AboutPage() {
                   </p>
                   
                   <p className="text-gray-700 text-sm mb-8 leading-relaxed">
-                    We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet's well-being.
+                    We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet&apos;s well-being.
                   </p>
                   
                   <Link
