@@ -15,7 +15,9 @@ export default function CtaSection() {
               Professional grooming, luxurious boarding, and fun daycare services for your beloved pets
             </p>
             <Link
-              href="/book-now"
+              href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-[#6bcbeb] px-8 py-3 rounded-[12px] font-bold hover:bg-gray-100 transition-all duration-300 inline-flex items-center border-2 border-white shadow-md"
             >
               <span>Book Now</span>

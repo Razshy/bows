@@ -31,7 +31,7 @@ export default function GroomedCollection() {
                 className="object-cover rounded-[12px]"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">African Macaw</h3>
+            <h3 className="text-xl font-bold uppercase text-center">Cavalier King</h3>
           </div>
 
           {/* Second Pet */}
@@ -59,7 +59,7 @@ export default function GroomedCollection() {
                 className="object-cover rounded-[12px]"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Spaniel Dog</h3>
+            <h3 className="text-xl font-bold uppercase text-center">Border Collie</h3>
           </div>
         </div>
       </div>

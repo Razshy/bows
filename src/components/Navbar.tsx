@@ -61,7 +61,9 @@ export default function Navbar() {
         {/* Book Now Button (Right Section) */}
         <div className="hidden md:flex items-center">
           <Link
-            href="/book-now"
+            href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+            target="_blank"
+            rel="noopener noreferrer"
             className=" text-gray-800 px-5 py-2 rounded-[12px] hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold"
           >
             Book Now
@@ -148,7 +150,9 @@ export default function Navbar() {
               Grooming
             </Link>
             <Link
-              href="/book-now"
+              href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+              target="_blank"
+              rel="noopener noreferrer"
               className="border-2 border-gray-800 text-gray-800 px-5 py-2 rounded-full hover:bg-gray-800 hover:text-white transition-colors text-sm font-bold inline-block w-fit"
               onClick={() => setMobileMenuOpen(false)}
             >

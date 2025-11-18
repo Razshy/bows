@@ -3,7 +3,6 @@ import dynamic from 'next/dynamic';
 // Import components with dynamic imports for better performance
 const Navbar = dynamic(() => import('../components/Navbar'));
 const Hero = dynamic(() => import('../components/Hero'));
-const About = dynamic(() => import('../components/About'));
 const GroomedCollection = dynamic(() => import('../components/GroomedCollection'));
 const CtaSection = dynamic(() => import('../components/CtaSection'));
 const Footer = dynamic(() => import('../components/Footer'));
@@ -27,7 +26,6 @@ export default function Home() {
         <Navbar />
         <Hero />
         <GroomedCollection />
-        <About />
         <CtaSection />
         <Footer />
       </main>
