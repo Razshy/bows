@@ -1,3 +1,5 @@
+"use client";
+
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -5,178 +7,186 @@ import Image from 'next/image';
 const Navbar = dynamic(() => import('../../components/Navbar'));
 const Footer = dynamic(() => import('../../components/Footer'));
 
-const highlights = [
-  {
-    title: 'Family Owned & Operated',
-    description: 'Proudly serving Delano with 21 years of hands-on pet service experience.',
-  },
-  {
-    title: 'All-In-One Care',
-    description: 'Five-star grooming, luxurious boarding, and action-packed daycare under one roof.',
-  },
-  {
-    title: 'Safety First',
-    description: 'Clean, sanitized suites, secure play yards, and a knowledgeable team you can trust.',
-  },
-];
-
-const values = [
-  {
-    name: 'Compassion',
-    detail: 'We treat every tail wag as if it belonged to our own pets—gentle handling and individualized attention are non-negotiable.',
-  },
-  {
-    name: 'Expertise',
-    detail: 'Our experienced groomers and caregivers stay current on best practices for coat care, enrichment, and animal behavior.',
-  },
-  {
-    name: 'Community',
-    detail: 'We’re neighbors first and providers second, partnering with local families to keep Delano’s pets happy and healthy.',
-  },
-];
-
 export default function AboutPage() {
   return (
-    <div className="bg-[#f7fdff]">
+    <div className="relative">
+      {/* Background matching homepage */}
+      <div className="absolute top-0 left-0 right-0 h-[800px] bg-[#b1f3ff] -z-10">
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="w-full h-full bg-[url('/images/background.png')] bg-repeat bg-contain opacity-25"></div>
+        </div>
+        <div className="absolute inset-0 opacity-5">
+          <div className="w-full h-full bg-[url('/grid-pattern.svg')] bg-repeat"></div>
+        </div>
+      </div>
+
       <main className="min-h-screen relative">
         <Navbar />
 
-        <section className="pt-28 pb-16 bg-white">
-          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 grid gap-12 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-6">
-              <p className="inline-flex items-center px-4 py-1 bg-[#e8fbff] rounded-full text-sm font-semibold text-[#008db1] w-fit border border-[#aeeaf6]">
-                About Bubbles &amp; Bows
-              </p>
-              <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-                WE ARE NOW OPEN!
-              </h1>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Are you looking for professional pet services in Delano? Do you need exceptional pet grooming or boarding
-                options for your best companion? Bubbles &amp; Bows Pet Services of Delano offers five star pet grooming,
-                luxurious boarding accommodations, and action-packed daycare for your pets.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Bubbles and Bows is a family owned business that boasts 21 years of pet service experience. We believe in
-                providing quality care for your animal with a knowledgeable staff, a clean and safe facility, and a
-                commitment to your animal’s well-being and care.
-              </p>
-              <div className="flex flex-wrap gap-4">
+        {/* Hero Section */}
+        <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
+          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              
+              {/* Left Content Card */}
+              <div className="relative">
+                <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+                  <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                    ABOUT<br />
+                    US
+                  </h1>
+                  
+                  <p className="text-gray-800 text-base mb-6 font-medium leading-relaxed">
+                    Family-owned pet services in Delano. 21 years of experience in grooming, boarding, and daycare.
+                  </p>
+                  
+                  <p className="text-gray-700 text-sm mb-8 leading-relaxed">
+                    We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet's well-being.
+                  </p>
+                  
+                  <Link
+                    href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+                  >
+                    <span>Book A Visit</span>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Right Image */}
+              <div className="relative">
+                <div className="relative w-full h-[400px] md:h-[500px] rounded-[12px] overflow-hidden">
+                  <Image
+                    src="/images/pups.png"
+                    alt="Happy dogs"
+                    fill
+                    style={{
+                      objectFit: 'cover',
+                      objectPosition: 'center'
+                    }}
+                    priority
+                    className="drop-shadow-xl"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Wave Divider */}
+        <div className="wave-divider">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 1440 120"
+            preserveAspectRatio="none"
+            className="wave"
+          >
+            <path
+              fill="#ffffff"
+              d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+            ></path>
+          </svg>
+        </div>
+
+        {/* Highlights Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
+            <div className="grid gap-6 md:grid-cols-3">
+              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8">
+                <h3 className="text-2xl font-black text-gray-900 mb-3">Family Owned</h3>
+                <p className="text-gray-700">21 years serving Delano</p>
+              </div>
+              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8">
+                <h3 className="text-2xl font-black text-gray-900 mb-3">All-In-One</h3>
+                <p className="text-gray-700">Grooming, boarding, and daycare</p>
+              </div>
+              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8">
+                <h3 className="text-2xl font-black text-gray-900 mb-3">Safety First</h3>
+                <p className="text-gray-700">Clean facility, secure yards, trained staff</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Values & CTA Section */}
+        <section className="py-16 bg-white">
+          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Values Card */}
+              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10">
+                <h2 className="text-4xl md:text-5xl font-black mb-8 tracking-tight">
+                  WHY CHOOSE US
+                </h2>
+                <div className="space-y-6">
+                  <div>
+                    <h3 className="text-xl font-black text-gray-900 mb-2">Compassion</h3>
+                    <p className="text-gray-700 text-sm">Gentle handling and individual attention for every pet</p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-black text-gray-900 mb-2">Expertise</h3>
+                    <p className="text-gray-700 text-sm">Experienced staff trained in best practices</p>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-black text-gray-900 mb-2">Community</h3>
+                    <p className="text-gray-700 text-sm">Neighbors first, partnering with local families</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Contact Card */}
+              <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-10 text-white">
+                <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">GET IN TOUCH</h3>
+                <p className="mb-8 text-white text-lg leading-relaxed">
+                  Ready to book? Have questions? We're here to help.
+                </p>
+                <div className="space-y-4 mb-8">
+                  <a href="tel:+17639723647" className="block text-white hover:text-white/90 transition-colors">
+                    <span className="font-semibold text-lg">(763) 972-3647</span>
+                  </a>
+                  <a href="mailto:bnbdelano@gmail.com" className="block text-white hover:text-white/90 transition-colors">
+                    <span className="font-semibold">bnbdelano@gmail.com</span>
+                  </a>
+                </div>
                 <Link
                   href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-2xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors"
+                  className="block w-full bg-white text-[#6bcbeb] px-8 py-3 rounded-[12px] font-bold text-center hover:bg-gray-100 transition-all duration-300 border-2 border-white"
                 >
-                  Book A Visit
-                </Link>
-                <Link
-                  href="tel:+17639723647"
-                  className="inline-flex items-center justify-center px-6 py-3 rounded-2xl border border-gray-900 text-gray-900 font-semibold hover:bg-gray-900 hover:text-white transition-colors"
-                >
-                  Call (763) 972-3647
+                  Book Online
                 </Link>
               </div>
-              <div className="rounded-3xl px-6 py-4 border border-[#aeeaf6] bg-[#f7fdff] flex flex-wrap gap-3 items-center text-sm md:text-base">
-                <span className="font-semibold text-gray-900">Grooming · Boarding · Daycare</span>
-                <span className="hidden md:inline-block text-gray-400">|</span>
-                <span className="text-[#008db1] font-semibold">CALL (763) 972-3647 TO SCHEDULE</span>
-              </div>
-            </div>
-            <div className="rounded-[32px] overflow-hidden border border-[#d8f6ff] bg-white shadow-lg">
-              <Image
-                src="/images/pups.png"
-                alt="Happy dogs at Bubbles & Bows"
-                width={960}
-                height={960}
-                className="w-full h-full object-cover"
-                priority
-              />
-            </div>
-          </div>
-        </section>
-
-        <section className="py-20 bg-white">
-          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 grid gap-8 md:grid-cols-3">
-            {highlights.map((item) => (
-              <div key={item.title} className="bg-[#f5fdff] border border-[#d8f6ff] rounded-[28px] p-8 shadow-sm">
-                <h3 className="text-xl font-bold text-gray-900">{item.title}</h3>
-                <p className="text-gray-600 mt-4">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <section className="py-20 bg-[#f7fdff]">
-          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 grid gap-10 lg:grid-cols-2 lg:items-center">
-            <div className="space-y-6">
-              <p className="text-sm font-semibold text-[#008db1] uppercase tracking-wide">Why Families Choose Us</p>
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-                Built On Trust, Tailored For Pets
-              </h2>
-              <p className="text-gray-700 leading-relaxed">
-                From day one, we set out to create a space where pet parents could feel confident leaving their
-                companions—whether for a grooming glow-up, an overnight retreat, or a full day of daycare adventures.
-                Twenty-one years later, our passion is stronger than ever.
-              </p>
-              <div className="space-y-4">
-                {values.map((value) => (
-                  <div key={value.name} className="bg-white rounded-2xl border border-gray-100 shadow p-6">
-                    <h3 className="text-xl font-semibold text-gray-900">{value.name}</h3>
-                    <p className="text-gray-600 mt-2">{value.detail}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="bg-white rounded-[36px] border border-gray-100 shadow-xl p-10 space-y-6">
-              <p className="text-sm font-semibold text-[#008db1] uppercase tracking-wide">Visit Us</p>
-              <h3 className="text-3xl font-bold text-gray-900">Plan Your First Appointment</h3>
-              <p className="text-gray-700">
-                We’re thrilled to welcome new furry friends to the Bubbles &amp; Bows family. Let’s find a service plan
-                that fits your pet’s needs and your schedule.
-              </p>
-              <div className="space-y-4">
-                <Link
-                  href="tel:+17639723647"
-                  className="flex items-center gap-3 text-gray-900 hover:text-[#008db1] transition-colors font-semibold"
-                >
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#e5fbff] text-[#008db1] font-bold">
-                    📞
-                  </span>
-                  (763) 972-3647
-                </Link>
-                <Link
-                  href="mailto:bnbdelano@gmail.com"
-                  className="flex items-center gap-3 text-gray-900 hover:text-[#008db1] transition-colors font-semibold"
-                >
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#e5fbff] text-[#008db1] font-bold">
-                    @
-                  </span>
-                  bnbdelano@gmail.com
-                </Link>
-                <Link
-                  href="/contact"
-                  className="flex items-center gap-3 text-gray-900 hover:text-[#008db1] transition-colors font-semibold"
-                >
-                  <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#e5fbff] text-[#008db1] font-bold">
-                    🐾
-                  </span>
-                  Schedule a meet &amp; greet tour
-                </Link>
-              </div>
-              <Link
-                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full px-6 py-3 rounded-2xl bg-gray-900 text-white font-semibold hover:bg-gray-800 transition-colors"
-              >
-                Book Online
-              </Link>
             </div>
           </div>
         </section>
 
         <Footer />
       </main>
+
+      <style jsx>{`
+        .wave-divider {
+          position: relative;
+          width: 100%;
+          height: 120px;
+          line-height: 0;
+          z-index: 20;
+          margin-top: -1px;
+        }
+
+        .wave {
+          width: 100%;
+          height: 100%;
+          display: block;
+        }
+
+        @media (max-width: 768px) {
+          .wave-divider {
+            height: 80px;
+          }
+        }
+      `}</style>
     </div>
   );
 }
