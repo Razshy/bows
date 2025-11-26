@@ -38,7 +38,7 @@ export default function Navbar() {
             <Link href="/boarding" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
               Boarding
             </Link>
-            <Link href="/Grooming" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
+            <Link href="/grooming" className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium">
               Grooming
             </Link>
           </div>
@@ -95,7 +95,7 @@ export default function Navbar() {
                 Boarding
               </Link>
               <Link
-                href="/Grooming"
+                href="/grooming"
                 className="text-gray-700 hover:text-gray-900 transition-colors text-sm font-medium"
                 onClick={() => setMobileMenuOpen(false)}
               >

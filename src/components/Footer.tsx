@@ -55,16 +55,15 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/training" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Training
-                  </Link>
-                </li>
-                <li>
                   <Link href="/daycare" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
                     Daycare
                   </Link>
                 </li>
-
+                <li>
+                  <Link href="/boarding" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
+                    Boarding
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -77,12 +76,6 @@ export default function Footer() {
                     About Us
                   </Link>
                 </li>
-                <li>
-                  <Link href="/contact" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Contact
-                  </Link>
-                </li>
-
               </ul>
             </div>
 
