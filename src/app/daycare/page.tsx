@@ -22,7 +22,7 @@ const packages = [
   },
   {
     name: 'Half-Day',
-    price: '$20',
+    price: '$24',
     duration: '4 hours or less',
     description: 'Shorter playdate with exercise and new friends.',
     perks: [
