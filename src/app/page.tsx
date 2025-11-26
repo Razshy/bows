@@ -4,6 +4,8 @@ import dynamic from 'next/dynamic';
 const Navbar = dynamic(() => import('../components/Navbar'));
 const Hero = dynamic(() => import('../components/Hero'));
 const GroomedCollection = dynamic(() => import('../components/GroomedCollection'));
+const BoardingCollection = dynamic(() => import('../components/BoardingCollection'));
+const DaycareCollection = dynamic(() => import('../components/DaycareCollection'));
 const CtaSection = dynamic(() => import('../components/CtaSection'));
 const Footer = dynamic(() => import('../components/Footer'));
 
@@ -26,6 +28,8 @@ export default function Home() {
         <Navbar />
         <Hero />
         <GroomedCollection />
+        <BoardingCollection />
+        <DaycareCollection />
         <CtaSection />
         <Footer />
       </main>

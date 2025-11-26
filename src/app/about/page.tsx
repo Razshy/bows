@@ -22,48 +22,50 @@ export default function AboutPage() {
       <main className="min-h-screen relative">
         <Navbar />
 
-        {/* Hero Section */}
-        <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
-          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
-            <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-              <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                ABOUT<br />
-                US
-              </h1>
+        <div className="relative">
+          {/* Hero Section */}
+          <section className="relative pt-24 md:pt-40 pb-48 overflow-hidden backdrop-blur-[2px] bg-white/10">
+            <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
+              <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+                <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                  ABOUT<br />
+                  US
+                </h1>
 
-              <p className="text-gray-800 text-base mb-6 font-medium leading-relaxed">
-                Family-owned pet services in Delano. 21 years of experience in grooming, boarding, and daycare.
-              </p>
+                <p className="text-gray-800 text-base mb-6 font-medium leading-relaxed">
+                  Family-owned pet services in Delano. 21 years of experience in grooming, boarding, and daycare.
+                </p>
 
-              <p className="text-gray-700 text-sm mb-8 leading-relaxed">
-                We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet&apos;s well-being.
-              </p>
+                <p className="text-gray-700 text-sm mb-8 leading-relaxed">
+                  We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet&apos;s well-being.
+                </p>
 
-              <Link
-                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
-              >
-                <span>Book A Visit</span>
-              </Link>
+                <Link
+                  href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+                >
+                  <span>Book A Visit</span>
+                </Link>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* Wave Divider */}
-        <div className="wave-divider">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1440 120"
-            preserveAspectRatio="none"
-            className="wave"
-          >
-            <path
-              fill="#ffffff"
-              d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
-            ></path>
-          </svg>
+          {/* Wave Divider */}
+          <div className="absolute bottom-0 left-0 w-full h-[120px] z-20 leading-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1440 120"
+              preserveAspectRatio="none"
+              className="w-full h-full block"
+            >
+              <path
+                fill="#ffffff"
+                d="M0,64L80,69.3C160,75,320,85,480,80C640,75,800,53,960,48C1120,43,1280,53,1360,58.7L1440,64L1440,120L1360,120C1280,120,1120,120,960,120C800,120,640,120,480,120C320,120,160,120,80,120L0,120Z"
+              ></path>
+            </svg>
+          </div>
         </div>
 
         {/* Highlights Section */}
