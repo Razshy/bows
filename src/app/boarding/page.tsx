@@ -13,7 +13,7 @@ const packages = [
   {
     name: 'Standard Room',
     price: '$42',
-    size: '4x5 suite',
+    size: '4x4 suite',
     description: 'For calm, older pups who prefer a quiet routine.',
     perks: [
       '4-6+ potty breaks daily',
@@ -24,7 +24,7 @@ const packages = [
   },
   {
     name: 'Premium Suite',
-    price: '$55',
+    price: '$58',
     size: '4x6 to 8x12 suites',
     description: 'Spacious suites with private patios and play park access.',
     perks: [
@@ -223,7 +223,7 @@ export default function BoardingPage() {
                 </h2>
                 <div className="space-y-4 text-gray-700 text-base leading-relaxed inline-block text-left">
                   <p>Check in during business hours</p>
-                  <p>Check out by 10 AM (after = extra day)</p>
+                  <p>Check out by 10 AM (after 10 AM a day stay fee is applied)</p>
                   <p>Temperament tests for group play</p>
                   <p>Daily updates on request</p>
                 </div>
@@ -239,8 +239,8 @@ export default function BoardingPage() {
                   <a href="tel:+17639723647" className="block text-white hover:text-white/90 transition-colors">
                     <span className="font-semibold text-lg">(763) 972-3647</span>
                   </a>
-                  <a href="mailto:bnbdelano@gmail.com" className="block text-white hover:text-white/90 transition-colors">
-                    <span className="font-semibold">bnbdelano@gmail.com</span>
+                  <a href="mailto:Bubblesandbowsofdelano@gmail.com" className="block text-white hover:text-white/90 transition-colors">
+                    <span className="font-semibold">Bubblesandbowsofdelano@gmail.com</span>
                   </a>
                 </div>
                 <Link

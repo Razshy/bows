@@ -237,8 +237,8 @@ export default function DaycarePage() {
                   <span className="font-semibold text-lg">(763) 972-3647</span>
                 </a>
                 <span className="hidden sm:block text-white/50">|</span>
-                <a href="mailto:bnbdelano@gmail.com" className="text-white hover:text-white/90 transition-colors">
-                  <span className="font-semibold">bnbdelano@gmail.com</span>
+                <a href="mailto:Bubblesandbowsofdelano@gmail.com" className="text-white hover:text-white/90 transition-colors">
+                  <span className="font-semibold">Bubblesandbowsofdelano@gmail.com</span>
                 </a>
               </div>
               <Link
