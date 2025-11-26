@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="relative">
       {/* Main hero section */}
-      <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden mt-0 backdrop-blur-[2px] bg-white/10 min-h-[600px] md:min-h-[650px] lg:min-h-[700px]">
+      <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden mt-0 backdrop-blur-[2px] bg-white/10 min-h-[450px] md:min-h-[650px] lg:min-h-[700px]">
         <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10 flex flex-col md:flex-row items-center">
           {/* Left side content */}
           <div className="md:w-[45%] mb-12 md:mb-0 relative">
@@ -41,7 +41,7 @@ export default function Hero() {
           </div>
 
           {/* Right side image with blue background */}
-          <div className="md:w-[55%] relative">
+          <div className="hidden md:block md:w-[55%] relative">
             {/* Image container with subtle backdrop */}
             <div className="relative p-6 rounded-xl">
               {/* Dog image - positioned to be cut off by the wave */}
@@ -106,7 +106,7 @@ export default function Hero() {
 
         /* Pet image positioning */
         .pet-image-wrapper {
-          height: 500px;
+          height: 350px;
           bottom: -120px; /* Align with the wave height */
           position: absolute;
         }
@@ -154,7 +154,7 @@ export default function Hero() {
             height: 60px;
           }
           .pet-image-wrapper {
-            height: 380px;
+            height: 300px;
             bottom: -60px; /* Match the wave height */
           }
         }
