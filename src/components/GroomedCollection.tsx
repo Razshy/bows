@@ -24,7 +24,7 @@ export default function GroomedCollection() {
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/g1.jpg"
+                src="/groom/gromed-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -38,7 +38,7 @@ export default function GroomedCollection() {
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/g2.jpg"
+                src="/groom/groomedd-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
@@ -52,7 +52,7 @@ export default function GroomedCollection() {
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/g3.jpg"
+                src="/groom/groomm-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
