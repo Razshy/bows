@@ -64,16 +64,7 @@ export default function Footer() {
                     Daycare
                   </Link>
                 </li>
-                <li>
-                  <Link href="/accessories" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Accessories
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/treats" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Treats
-                  </Link>
-                </li>
+
               </ul>
             </div>
 
@@ -91,21 +82,7 @@ export default function Footer() {
                     Contact
                   </Link>
                 </li>
-                <li>
-                  <Link href="/careers" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Careers
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/terms" className="text-gray-600 hover:text-[#6bcbeb] transition-colors">
-                    Terms of Service
-                  </Link>
-                </li>
+
               </ul>
             </div>
 
@@ -141,17 +118,7 @@ export default function Footer() {
             <p className="text-gray-500 text-sm mb-4 md:mb-0">
               © {new Date().getFullYear()} Bubbles & Bows. All rights reserved.
             </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy" className="text-gray-500 text-sm hover:text-[#6bcbeb] transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms" className="text-gray-500 text-sm hover:text-[#6bcbeb] transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="/cookies" className="text-gray-500 text-sm hover:text-[#6bcbeb] transition-colors">
-                Cookie Policy
-              </Link>
-            </div>
+
           </div>
         </div>
       </div>

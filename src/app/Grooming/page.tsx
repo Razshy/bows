@@ -27,48 +27,25 @@ export default function GroomingPage() {
         {/* Hero Section */}
         <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              
-              {/* Left Content Card */}
-              <div className="relative">
-                <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-                  <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                    PET<br />
-                    GROOMING
-                  </h1>
-                  
-                  <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
-                    Expert grooming by Toni Brose with 22 years of experience.<br />
-                    From nail trims to full spa treatments.
-                  </p>
-                  
-                  <Link
-                    href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
-                  >
-                    <span>Book Grooming</span>
-                  </Link>
-                </div>
-              </div>
+            <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                PET<br />
+                GROOMING
+              </h1>
 
-              {/* Right Image */}
-              <div className="relative">
-                <div className="relative w-full h-[400px] md:h-[500px]">
-                  <Image
-                    src="/groom/groom.png"
-                    alt="Groomed pet"
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      objectPosition: 'center'
-                    }}
-                    priority
-                    className="drop-shadow-xl"
-                  />
-                </div>
-              </div>
+              <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
+                Expert grooming by Toni Brose with 22 years of experience.<br />
+                From nail trims to full spa treatments.
+              </p>
+
+              <Link
+                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+              >
+                <span>Book Grooming</span>
+              </Link>
             </div>
           </div>
         </section>
@@ -113,7 +90,7 @@ export default function GroomingPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[#b1f3ff] flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.121 14.121L19 19m-7-7l7-7m-7 7l-2.879 2.879M12 12L9.121 9.121m0 5.758a3 3 0 10-4.243 4.243 3 3 0 004.243-4.243zm0-5.758a3 3 0 10-4.243-4.243 3 3 0 004.243 4.243z" />
                     </svg>
                   </div>
                   <div>
@@ -128,7 +105,7 @@ export default function GroomingPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[#b1f3ff] flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
                     </svg>
                   </div>
                   <div>
@@ -143,7 +120,7 @@ export default function GroomingPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[#b1f3ff] flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
                   </div>
                   <div>
@@ -173,7 +150,7 @@ export default function GroomingPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[#b1f3ff] flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
                     </svg>
                   </div>
                   <div>
@@ -188,7 +165,7 @@ export default function GroomingPage() {
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 rounded-lg bg-[#b1f3ff] flex items-center justify-center flex-shrink-0">
                     <svg className="w-6 h-6 text-gray-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
                     </svg>
                   </div>
                   <div>
@@ -207,11 +184,26 @@ export default function GroomingPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Meet Toni Card */}
               <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10">
-                <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
-                  MEET TONI BROSE
-                </h2>
+                <div className="flex items-center gap-6 mb-6">
+                  <div className="relative w-24 h-24 rounded-[12px] overflow-hidden flex-shrink-0 border-2 border-gray-200">
+                    <Image
+                      src="/owner/toni.png"
+                      alt="Toni Brose"
+                      fill
+                      style={{
+                        objectFit: 'cover',
+                        objectPosition: 'center'
+                      }}
+                    />
+                  </div>
+                  <div>
+                    <h2 className="text-4xl md:text-5xl font-black tracking-tight">
+                      MEET TONI BROSE
+                    </h2>
+                  </div>
+                </div>
                 <p className="text-gray-800 text-lg leading-relaxed mb-8">
-                  I&apos;ve been grooming for 22 years. Breed cuts, creative styles, anxious pets—I&apos;ve seen it all and know how to handle each one.
+                  I&apos;ve been grooming for 22 years. Breed cuts, creative styles, anxious pets. I&apos;ve seen it all and know how to handle each one.
                 </p>
                 <div className="space-y-3 text-gray-700 text-base leading-relaxed">
                   <p>Two decades of hands-on experience</p>

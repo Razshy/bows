@@ -18,7 +18,7 @@ const packages = [
       'Indoor & outdoor rotations',
       'Flexible drop-off/pick-up',
     ],
-    image: '/daycare/Daycare.4.jpg',
+    image: '/daycare/full.JPG',
   },
   {
     name: 'Half-Day',
@@ -30,7 +30,7 @@ const packages = [
       'Quick energy burn',
       'Easy transition to full-day',
     ],
-    image: '/daycare/Daycare.5.jpg',
+    image: '/daycare/half.png',
   },
   {
     name: 'Unlimited',
@@ -42,23 +42,23 @@ const packages = [
       'Priority scheduling',
       'Best value',
     ],
-    image: '/daycare/Daycare.3.jpg',
+    image: '/daycare/unlimited.JPG',
   },
 ];
 
 const gallery = [
   {
-    src: '/daycare/Daycare.4.jpg',
+    src: '/play/indoor.png',
     alt: 'Indoor play area',
     label: 'Indoor Play',
   },
   {
-    src: '/daycare/Daycare.5.jpg',
+    src: '/play/outdoors.png',
     alt: 'Outdoor play yard',
     label: 'Outdoor Yard',
   },
   {
-    src: '/daycare/Daycare.3.jpg',
+    src: '/play/rest.png',
     alt: 'Rest area',
     label: 'Chill Zone',
   },
@@ -83,53 +83,34 @@ export default function DaycarePage() {
         {/* Hero Section */}
         <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              
-              {/* Left Content Card */}
-              <div className="relative">
-                <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-                  <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                    PET<br />
-                    DAYCARE
-                  </h1>
-                  
-                  <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
-                    Safe, supervised play for social pups.<br />
-                    Indoor and outdoor spaces with trained staff.
-                  </p>
-                  
-                  <div className="bg-gray-50 border border-gray-200 rounded-[12px] p-4 mb-8">
-                    <p className="font-bold text-gray-900 mb-2">Requirements</p>
-                    <p className="text-sm text-gray-700">Spayed/neutered (6+ months), behavior assessment, current vaccinations</p>
-                  </div>
-                  
-                  <Link
-                    href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
-                  >
-                    <span>Book Daycare</span>
-                  </Link>
-                </div>
+            <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                PET<br />
+                DAYCARE
+              </h1>
+
+              <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
+                Safe, supervised play for social pups.<br />
+                Indoor and outdoor spaces with trained staff.
+              </p>
+
+              <div className="mb-8">
+                <p className="font-bold text-gray-900 mb-3">Requirements</p>
+                <ul className="space-y-1 text-sm text-gray-700">
+                  <li>• Spayed/neutered (6+ months)</li>
+                  <li>• Behavior assessment</li>
+                  <li>• Current vaccinations</li>
+                </ul>
               </div>
 
-              {/* Right Image */}
-              <div className="relative">
-                <div className="relative w-full h-[400px] md:h-[500px]">
-                  <Image
-                    src="/daycare/Daycare.4.jpg"
-                    alt="Daycare play area"
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      objectPosition: 'center'
-                    }}
-                    priority
-                    className="drop-shadow-xl rounded-[12px]"
-                  />
-                </div>
-              </div>
+              <Link
+                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+              >
+                <span>Book Daycare</span>
+              </Link>
             </div>
           </div>
         </section>

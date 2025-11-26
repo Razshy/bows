@@ -73,59 +73,36 @@ export default function BoardingPage() {
         {/* Hero Section */}
         <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              
-              {/* Left Content Card */}
-              <div className="relative">
-                <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-                  <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                    PET<br />
-                    BOARDING
-                  </h1>
-                  
-                  <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
-                    A vacation for them, peace of mind for you.<br />
-                    Climate-controlled suites with love and care.
-                  </p>
-                  
-                  <div className="grid grid-cols-2 gap-3 mb-8">
-                    <div className="bg-gray-50 border border-gray-200 rounded-[12px] p-4">
-                      <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Check-in</p>
-                      <p className="text-sm font-bold text-gray-900">Business hours</p>
-                    </div>
-                    <div className="bg-gray-50 border border-gray-200 rounded-[12px] p-4">
-                      <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Check-out</p>
-                      <p className="text-sm font-bold text-gray-900">10:00 AM</p>
-                    </div>
-                  </div>
-                  
-                  <Link
-                    href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
-                  >
-                    <span>Book Their Stay</span>
-                  </Link>
+            <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                PET<br />
+                BOARDING
+              </h1>
+
+              <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
+                A vacation for them, peace of mind for you.<br />
+                Climate-controlled suites with love and care.
+              </p>
+
+              <div className="grid grid-cols-2 gap-3 mb-8">
+                <div className="bg-gray-50 border border-gray-200 rounded-[12px] p-4">
+                  <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Check-in</p>
+                  <p className="text-sm font-bold text-gray-900">Business hours</p>
+                </div>
+                <div className="bg-gray-50 border border-gray-200 rounded-[12px] p-4">
+                  <p className="text-xs uppercase tracking-wide text-gray-500 mb-1">Check-out</p>
+                  <p className="text-sm font-bold text-gray-900">10:00 AM</p>
                 </div>
               </div>
 
-              {/* Right Image */}
-              <div className="relative">
-                <div className="relative w-full h-[400px] md:h-[500px]">
-                  <Image
-                    src="/boarding/room1.png"
-                    alt="Boarding suite"
-                    fill
-                    style={{
-                      objectFit: 'contain',
-                      objectPosition: 'center'
-                    }}
-                    priority
-                    className="drop-shadow-xl"
-                  />
-                </div>
-              </div>
+              <Link
+                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+              >
+                <span>Book Their Stay</span>
+              </Link>
             </div>
           </div>
         </section>
@@ -193,13 +170,11 @@ export default function BoardingPage() {
                   Pick the suite that fits your pup&apos;s personality
                 </p>
               </div>
-              <div className="bg-[#b1f3ff] border-2 border-gray-200 rounded-[12px] px-6 py-5">
-                <p className="font-bold text-gray-900 mb-2">Required Vaccinations</p>
-                <ul className="flex flex-wrap gap-2">
+              <div>
+                <p className="font-bold text-gray-900 mb-3">Required Vaccinations</p>
+                <ul className="space-y-1 text-sm text-gray-700">
                   {requirements.map((item) => (
-                    <li key={item} className="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm font-medium text-gray-700">
-                      {item}
-                    </li>
+                    <li key={item}>• {item}</li>
                   ))}
                 </ul>
               </div>

@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Navbar = dynamic(() => import('../../components/Navbar'));
 const Footer = dynamic(() => import('../../components/Footer'));
@@ -26,51 +25,28 @@ export default function AboutPage() {
         {/* Hero Section */}
         <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              
-              {/* Left Content Card */}
-              <div className="relative">
-                <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-                  <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-                    ABOUT<br />
-                    US
-                  </h1>
-                  
-                  <p className="text-gray-800 text-base mb-6 font-medium leading-relaxed">
-                    Family-owned pet services in Delano. 21 years of experience in grooming, boarding, and daycare.
-                  </p>
-                  
-                  <p className="text-gray-700 text-sm mb-8 leading-relaxed">
-                    We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet&apos;s well-being.
-                  </p>
-                  
-                  <Link
-                    href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
-                  >
-                    <span>Book A Visit</span>
-                  </Link>
-                </div>
-              </div>
+            <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
+              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+                ABOUT<br />
+                US
+              </h1>
 
-              {/* Right Image */}
-              <div className="relative">
-                <div className="relative w-full h-[400px] md:h-[500px] rounded-[12px] overflow-hidden">
-                  <Image
-                    src="/images/pups.png"
-                    alt="Happy dogs"
-                    fill
-                    style={{
-                      objectFit: 'cover',
-                      objectPosition: 'center'
-                    }}
-                    priority
-                    className="drop-shadow-xl"
-                  />
-                </div>
-              </div>
+              <p className="text-gray-800 text-base mb-6 font-medium leading-relaxed">
+                Family-owned pet services in Delano. 21 years of experience in grooming, boarding, and daycare.
+              </p>
+
+              <p className="text-gray-700 text-sm mb-8 leading-relaxed">
+                We provide quality care with a knowledgeable staff, clean facility, and commitment to your pet&apos;s well-being.
+              </p>
+
+              <Link
+                href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#b1f3ff] text-black px-8 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 inline-flex items-center border-2 border-gray-300"
+              >
+                <span>Book A Visit</span>
+              </Link>
             </div>
           </div>
         </section>
