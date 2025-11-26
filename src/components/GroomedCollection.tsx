@@ -14,7 +14,7 @@ export default function GroomedCollection() {
           </div>
           <div className="md:w-1/3 md:text-right">
             <p className="text-gray-700 text-lg">
-              We have 22 years of grooming experience.
+              Expert grooming with a gentle touch. Everything from a nail trim to a full service spa treatment and everything in between.
             </p>
           </div>
         </div>
