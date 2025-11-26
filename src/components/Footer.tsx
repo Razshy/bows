@@ -14,7 +14,7 @@ export default function Footer() {
       {/* Main footer content */}
       <div className="bg-white py-16">
         <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-start gap-12">
+          <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
             {/* Logo and tagline */}
             <div className="md:w-1/3">
               <Link href="/" className="flex items-center mb-4">

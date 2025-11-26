@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <div className="relative">
       {/* Main hero section */}
-      <section className="relative pt-40 pb-24 overflow-hidden mt-0 backdrop-blur-[2px] bg-white/10 min-h-[600px] md:min-h-[650px] lg:min-h-[700px]">
+      <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden mt-0 backdrop-blur-[2px] bg-white/10 min-h-[600px] md:min-h-[650px] lg:min-h-[700px]">
         <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10 flex flex-col md:flex-row items-center">
           {/* Left side content */}
           <div className="md:w-[45%] mb-12 md:mb-0 relative">
@@ -16,7 +16,7 @@ export default function Hero() {
             <div className="relative">
               {/* Main content card with square top-left corner */}
               <div className="relative z-10 bg-white/95 p-8 shadow-lg border border-gray-100 hero-card">
-                <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 z-10 relative tracking-tight">
+                <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 z-10 relative tracking-tight">
                   YOUR <br />
                   PUP&apos;S HAPPY<br />
                   PLACE

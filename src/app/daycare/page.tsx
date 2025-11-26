@@ -81,10 +81,10 @@ export default function DaycarePage() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
+        <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
             <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+              <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
                 PET<br />
                 DAYCARE
               </h1>
@@ -133,13 +133,13 @@ export default function DaycarePage() {
         {/* Packages Section */}
         <section className="py-16 bg-white">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-12">
-              <div className="md:w-1/2">
-                <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight">
+            <div className="flex flex-col md:flex-row items-center justify-between mb-12 text-center md:text-left">
+              <div className="md:w-1/2 mb-4 md:mb-0">
+                <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
                   DAYCARE<br />PACKAGES
                 </h2>
               </div>
-              <div className="md:w-1/2 text-right">
+              <div className="md:w-1/2 md:text-right">
                 <p className="text-gray-700 text-lg">
                   Flexible options for every schedule
                 </p>
@@ -190,13 +190,13 @@ export default function DaycarePage() {
         {/* Gallery Section */}
         <section className="py-16 bg-white">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-12">
-              <div className="md:w-1/2">
-                <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight">
+            <div className="flex flex-col md:flex-row items-center justify-between mb-12 text-center md:text-left">
+              <div className="md:w-1/2 mb-4 md:mb-0">
+                <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
                   PLAY SPACES
                 </h2>
               </div>
-              <div className="md:w-1/2 text-right">
+              <div className="md:w-1/2 md:text-right">
                 <p className="text-gray-700 text-lg">
                   Indoor and outdoor areas for play and rest
                 </p>
@@ -227,7 +227,7 @@ export default function DaycarePage() {
         <section className="py-16 bg-white">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
             <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-12 text-white text-center">
-              <h3 className="text-4xl md:text-5xl font-black mb-4 tracking-tight">READY TO PLAY?</h3>
+              <h3 className="text-3xl md:text-5xl font-black mb-4 tracking-tight">READY TO PLAY?</h3>
               <p className="mb-8 text-white text-lg max-w-2xl mx-auto">
                 Book online or call us to schedule your pup&apos;s first day.
               </p>

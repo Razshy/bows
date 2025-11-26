@@ -25,10 +25,10 @@ export default function GroomingPage() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
+        <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
             <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+              <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
                 PET<br />
                 GROOMING
               </h1>
@@ -184,7 +184,7 @@ export default function GroomingPage() {
             <div className="grid md:grid-cols-2 gap-6">
               {/* Meet Toni Card */}
               <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10">
-                <div className="flex items-center gap-6 mb-6">
+                <div className="flex flex-col md:flex-row items-center gap-6 mb-6 text-center md:text-left">
                   <div className="relative w-24 h-24 rounded-[12px] overflow-hidden flex-shrink-0 border-2 border-gray-200">
                     <Image
                       src="/owner/toni.png"

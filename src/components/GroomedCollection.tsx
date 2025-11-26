@@ -6,13 +6,13 @@ export default function GroomedCollection() {
   return (
     <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-white" id="collection">
       <div className="container mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between mb-16">
-          <div className="md:w-1/3">
-            <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight">
+        <div className="flex flex-col md:flex-row items-center justify-between mb-12 md:mb-16 text-center md:text-left">
+          <div className="md:w-1/3 mb-4 md:mb-0">
+            <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
               WE GROOM
             </h2>
           </div>
-          <div className="md:w-1/3 text-right">
+          <div className="md:w-1/3 md:text-right">
             <p className="text-gray-700 text-lg">
               We have 22 years of grooming experience.
             </p>

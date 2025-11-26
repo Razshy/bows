@@ -71,10 +71,10 @@ export default function BoardingPage() {
         <Navbar />
 
         {/* Hero Section */}
-        <section className="relative pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
+        <section className="relative pt-24 md:pt-40 pb-24 overflow-hidden backdrop-blur-[2px] bg-white/10">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 relative z-10">
             <div className="bg-white/95 p-8 md:p-10 shadow-lg border border-gray-100 rounded-[12px]">
-              <h1 className="text-black text-5xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
+              <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
                 PET<br />
                 BOARDING
               </h1>
@@ -125,13 +125,13 @@ export default function BoardingPage() {
         {/* Room Gallery */}
         <section className="py-16 bg-white">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
-            <div className="flex flex-col md:flex-row items-center justify-between mb-12">
-              <div className="md:w-1/2">
-                <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight">
+            <div className="flex flex-col md:flex-row items-center justify-between mb-12 text-center md:text-left">
+              <div className="md:w-1/2 mb-4 md:mb-0">
+                <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
                   OUR SUITES
                 </h2>
               </div>
-              <div className="md:w-1/2 text-right">
+              <div className="md:w-1/2 md:text-right">
                 <p className="text-gray-700 text-lg">
                   Climate-controlled rooms, private patios, and play yards
                 </p>
@@ -162,15 +162,15 @@ export default function BoardingPage() {
         <section className="py-16 bg-white">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
             <div className="flex flex-col md:flex-row items-start justify-between gap-8 mb-12">
-              <div className="md:w-1/2">
-                <h2 className="text-5xl md:text-6xl font-black leading-tight tracking-tight mb-4">
+              <div className="md:w-1/2 text-center md:text-left w-full">
+                <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight mb-4">
                   BOARDING<br />PACKAGES
                 </h2>
                 <p className="text-gray-700 text-lg">
                   Pick the suite that fits your pup&apos;s personality
                 </p>
               </div>
-              <div>
+              <div className="w-full md:w-auto">
                 <p className="font-bold text-gray-900 mb-3">Required Vaccinations</p>
                 <ul className="space-y-1 text-sm text-gray-700">
                   {requirements.map((item) => (
@@ -215,11 +215,11 @@ export default function BoardingPage() {
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Policies Card */}
-              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10">
+              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10 text-center md:text-left">
                 <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">
                   THE BASICS
                 </h2>
-                <div className="space-y-4 text-gray-700 text-base leading-relaxed">
+                <div className="space-y-4 text-gray-700 text-base leading-relaxed inline-block text-left">
                   <p>Check in during business hours</p>
                   <p>Check out by 10 AM (after = extra day)</p>
                   <p>Temperament tests for group play</p>
