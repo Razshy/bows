@@ -28,7 +28,7 @@ export default function Footer() {
                 <span className="text-xl font-bold text-gray-800">Bubbles & Bows</span>
               </Link>
               <p className="text-gray-600 mb-6 max-w-xs">
-                Premium pet grooming and care services for your furry friends. We treat your pets like family.
+                Premium pet grooming, boarding and daycare services for your furry friends. We treat your pets like family.
               </p>
               <div className="flex space-x-3">
                 <Link
