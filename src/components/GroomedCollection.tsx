@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function GroomedCollection() {
   return (
-    <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-gradient-to-b from-white to-gray-50" id="collection">
+    <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-white" id="collection">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 md:mb-16 text-center md:text-left">
           <div className="md:w-1/3 mb-4 md:mb-0">
