@@ -24,42 +24,42 @@ export default function GroomedCollection() {
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/groom.png"
+                src="/groom/g1.jpg"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover rounded-[12px]"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Cavalier King</h3>
+            <h3 className="text-xl font-bold uppercase text-center">Golden Retriever</h3>
           </div>
 
           {/* Second Pet */}
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/groom-1.png"
+                src="/groom/g2.jpg"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover rounded-[12px]"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Spanish Bulldog</h3>
+            <h3 className="text-xl font-bold uppercase text-center">Goldendoodle</h3>
           </div>
 
           {/* Third Pet */}
           <div className="pet-card flex flex-col items-center">
             <div className="relative w-full aspect-square mb-4">
               <Image
-                src="/groom/groom-2.png"
+                src="/groom/g3.jpg"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 className="object-cover rounded-[12px]"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Border Collie</h3>
+            <h3 className="text-xl font-bold uppercase text-center">Bichon Frise</h3>
           </div>
         </div>
       </div>
