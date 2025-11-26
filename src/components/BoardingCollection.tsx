@@ -21,42 +21,42 @@ export default function BoardingCollection() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                     {/* First Item */}
-                    <div className="pet-card flex flex-col items-center">
-                        <div className="relative w-full aspect-square mb-4">
+                    <div className="pet-card group flex flex-col items-center">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/room1.png"
                                 alt="Premium Suite"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover rounded-[12px]"
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <h3 className="text-xl font-bold uppercase text-center">Premium Suite</h3>
                     </div>
 
                     {/* Second Item */}
-                    <div className="pet-card flex flex-col items-center">
-                        <div className="relative w-full aspect-square mb-4">
+                    <div className="pet-card group flex flex-col items-center">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/room2.png"
                                 alt="Standard Room"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover rounded-[12px]"
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <h3 className="text-xl font-bold uppercase text-center">Standard Room</h3>
                     </div>
 
                     {/* Third Item */}
-                    <div className="pet-card flex flex-col items-center">
-                        <div className="relative w-full aspect-square mb-4">
+                    <div className="pet-card group flex flex-col items-center">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/stall.png"
                                 alt="Pup Patio"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 33vw"
-                                className="object-cover rounded-[12px]"
+                                className="object-cover group-hover:scale-105 transition-transform duration-300"
                             />
                         </div>
                         <h3 className="text-xl font-bold uppercase text-center">Pup Patio</h3>

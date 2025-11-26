@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function GroomedCollection() {
   return (
-    <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-white" id="collection">
+    <section className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12 py-16 bg-gradient-to-b from-white to-gray-50" id="collection">
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between mb-12 md:mb-16 text-center md:text-left">
           <div className="md:w-1/3 mb-4 md:mb-0">
@@ -21,42 +21,42 @@ export default function GroomedCollection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* First Pet */}
-          <div className="pet-card flex flex-col items-center">
-            <div className="relative w-full aspect-square mb-4">
+          <div className="pet-card group flex flex-col items-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/gromed-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover rounded-[12px]"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <h3 className="text-xl font-bold uppercase text-center">Golden Retriever</h3>
           </div>
 
           {/* Second Pet */}
-          <div className="pet-card flex flex-col items-center">
-            <div className="relative w-full aspect-square mb-4">
+          <div className="pet-card group flex flex-col items-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomedd-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover rounded-[12px]"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <h3 className="text-xl font-bold uppercase text-center">Goldendoodle</h3>
           </div>
 
           {/* Third Pet */}
-          <div className="pet-card flex flex-col items-center">
-            <div className="relative w-full aspect-square mb-4">
+          <div className="pet-card group flex flex-col items-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomm-min.png"
                 alt="Groomed Pet"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover rounded-[12px]"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
             <h3 className="text-xl font-bold uppercase text-center">Bichon Frise</h3>
@@ -66,7 +66,7 @@ export default function GroomedCollection() {
 
       <style jsx>{`
         .pet-card {
-          transition: transform 0.3s ease;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .pet-card:hover {
