@@ -15,7 +15,7 @@ export default function Hero() {
             {/* Text content container with card-based design */}
             <div className="relative">
               {/* Main content card with square top-left corner */}
-              <div className="relative z-10 bg-white/95 p-8 shadow-lg border border-gray-100 hero-card">
+              <div className="relative z-10 bg-white/95 md:bg-white/95 bg-gradient-to-br from-white to-blue-50/30 p-8 shadow-lg border border-gray-100 hero-card">
                 <h1 className="text-black text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 z-10 relative tracking-tight">
                   YOUR <br />
                   PUP&apos;S HAPPY<br />

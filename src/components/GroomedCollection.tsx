@@ -19,9 +19,9 @@ export default function GroomedCollection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-8 md:pb-0 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
           {/* First Pet */}
-          <div className="pet-card group flex flex-col items-center">
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/gromed-min.png"
@@ -35,7 +35,7 @@ export default function GroomedCollection() {
           </div>
 
           {/* Second Pet */}
-          <div className="pet-card group flex flex-col items-center">
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomedd-min.png"
@@ -49,7 +49,7 @@ export default function GroomedCollection() {
           </div>
 
           {/* Third Pet */}
-          <div className="pet-card group flex flex-col items-center">
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomm-min.png"
@@ -71,6 +71,17 @@ export default function GroomedCollection() {
 
         .pet-card:hover {
           transform: translateY(-8px);
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .scrollbar-hide {
+            -ms-overflow-style: none;  /* IE and Edge */
+            scrollbar-width: none;  /* Firefox */
         }
       `}</style>
     </section>
