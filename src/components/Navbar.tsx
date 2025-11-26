@@ -6,8 +6,6 @@ import { useState, } from 'react';
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [treatsDropdownOpen, setTreatsDropdownOpen] = useState(false);
-
   // Handle scroll event to change navbar appearance
 
 
