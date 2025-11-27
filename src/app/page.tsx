@@ -27,6 +27,35 @@ export default function Home() {
       <main className="min-h-screen relative">
         <Navbar />
         <Hero />
+        {/* Quick Info Section */}
+        <section className="py-12 bg-white">
+          <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Location</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  8875 US Hwy 12<br />
+                  Delano, MN
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Contact</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  <a href="tel:+17639723647" className="hover:text-[#6bcbeb] transition-colors">(763) 972-3647</a><br />
+                  <a href="mailto:Bubblesandbowsofdelano@gmail.com" className="hover:text-[#6bcbeb] transition-colors text-sm">Bubblesandbowsofdelano@gmail.com</a>
+                </p>
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-gray-900 mb-3">Experience</h3>
+                <p className="text-gray-600 leading-relaxed">
+                  Family Owned<br />
+                  22 Years in Business
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <GroomedCollection />
         <BoardingCollection />
         <DaycareCollection />

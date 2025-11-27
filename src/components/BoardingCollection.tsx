@@ -11,6 +11,7 @@ export default function BoardingCollection() {
                         <h2 className="text-4xl md:text-6xl font-black leading-tight tracking-tight">
                             WE BOARD
                         </h2>
+                        <p className="text-sm text-gray-500 mt-2 font-medium">COMFORTABLE BOARDING SUITES</p>
                     </div>
                     <div className="md:w-1/3 md:text-right">
                         <p className="text-gray-700 text-lg">
