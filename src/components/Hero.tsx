@@ -23,7 +23,7 @@ export default function Hero() {
                 </h1>
 
                 <p className="text-gray-800 text-base mb-8 max-w-md font-medium leading-relaxed">
-                  Professional grooming and care services that treat<br />
+                  Professional grooming, boarding and daycare services that treat<br />
                   your furry friends like family.
                 </p>
 
