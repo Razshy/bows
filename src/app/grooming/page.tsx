@@ -2,7 +2,6 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Navbar = dynamic(() => import('../../components/Navbar'));
 const Footer = dynamic(() => import('../../components/Footer'));

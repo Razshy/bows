@@ -74,7 +74,7 @@ export default function AboutPage() {
               <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8">
                 <h3 className="text-2xl font-black text-gray-900 mb-3">All-In-One</h3>
                 <p className="text-gray-700">Grooming, boarding, and daycare</p>
-                <p className="text-gray-600 text-sm mt-2">You can even add grooming services to your pet's boarding stay.</p>
+                <p className="text-gray-600 text-sm mt-2">You can even add grooming services to your pet&apos;s boarding stay.</p>
               </div>
               <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8">
                 <h3 className="text-2xl font-black text-gray-900 mb-3">Safety First</h3>
