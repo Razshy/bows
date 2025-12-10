@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function GroomedCollection() {
   return (
@@ -13,30 +14,23 @@ export default function GroomedCollection() {
             </h2>
             <p className="text-sm text-gray-500 mt-2 font-medium">PROFESSIONAL GROOMING SERVICES</p>
           </div>
-          <div className="md:w-1/3 md:text-right">
-            <p className="text-gray-700 text-lg">
+          <div className="md:w-1/2 md:text-right">
+            <p className="text-gray-700 text-lg mb-4">
               Expert grooming with a gentle touch. Everything from a nail trim to a full service spa treatment and everything in between.
             </p>
+            <Link
+              href="/grooming"
+              className="inline-block bg-[#6bcbeb] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5bb8d8] transition-colors"
+            >
+              Learn More
+            </Link>
           </div>
         </div>
 
-        <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-8 md:pb-0 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
-          {/* First Pet */}
-          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
-            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
-              <Image
-                src="/groom/gromed-min.png"
-                alt="Groomed Pet"
-                fill
-                sizes="(max-width: 768px) 100vw, 33vw"
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <h3 className="text-xl font-bold uppercase text-center">Golden Retriever</h3>
-          </div>
+        <div className="flex gap-6 md:gap-8 overflow-x-auto pb-8 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
 
           {/* Second Pet */}
-          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomedd-min.png"
@@ -46,11 +40,10 @@ export default function GroomedCollection() {
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Goldendoodle</h3>
           </div>
 
           {/* Third Pet */}
-          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
             <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
               <Image
                 src="/groom/groomm-min.png"
@@ -60,7 +53,97 @@ export default function GroomedCollection() {
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <h3 className="text-xl font-bold uppercase text-center">Bichon Frise</h3>
+          </div>
+
+          {/* Fourth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_0120.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Fifth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_0140.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Sixth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_1790.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Seventh Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_2219.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Eighth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_2779.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Ninth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_2826.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
+          </div>
+
+          {/* Tenth Pet */}
+          <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-[calc((100%-4rem)/3)] snap-center">
+            <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+              <Image
+                src="/groom/IMG_3007.JPG"
+                alt="Groomed Pet"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                className="object-cover group-hover:scale-105 transition-transform duration-300"
+              />
+            </div>
           </div>
         </div>
       </div>

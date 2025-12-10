@@ -180,62 +180,39 @@ export default function GroomingPage() {
           </div>
         </section>
 
-        {/* CTA Section - Meet Toni & Book */}
-        <section className="py-16 bg-white">
+        {/* CTA Section - Book Today */}
+        <section className="py-16 bg-white relative">
           <div className="max-w-[90rem] mx-auto px-4 md:px-6 lg:px-12">
-            <div className="grid md:grid-cols-2 gap-6">
-              {/* Meet Toni Card */}
-              <div className="bg-white border-2 border-gray-200 rounded-[12px] p-8 md:p-10">
-                <div className="flex flex-col md:flex-row items-center gap-6 mb-6 text-center md:text-left">
-                  <div className="relative w-24 h-24 rounded-[12px] overflow-hidden flex-shrink-0 border-2 border-gray-200">
-                    <Image
-                      src="/owner/toni.png"
-                      alt="Toni Brose"
-                      fill
-                      style={{
-                        objectFit: 'cover',
-                        objectPosition: 'center'
-                      }}
-                    />
-                  </div>
-                  <div>
-                    <h2 className="text-4xl md:text-5xl font-black tracking-tight">
-                      MEET TONI BROSE
-                    </h2>
-                  </div>
-                </div>
-                <p className="text-gray-800 text-lg leading-relaxed mb-8">
-                  I&apos;ve been grooming for 22 years. Breed cuts, creative styles, anxious pets. I&apos;ve seen it all and know how to handle each one.
-                </p>
-                <div className="space-y-3 text-gray-700 text-base leading-relaxed">
-                  <p>Two decades of hands-on experience</p>
-                  <p>Personalized approach for every pet</p>
-                  <p>Quiet, stress-free environment</p>
-                  <p>Clear communication throughout</p>
-                </div>
-              </div>
-
-              {/* Book Today Card */}
-              <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-10 text-white">
-                <h3 className="text-4xl md:text-5xl font-black mb-6 tracking-tight">BOOK TODAY</h3>
-                <p className="mb-8 text-white text-lg leading-relaxed">
+            <div className="bg-[#6bcbeb] rounded-[12px] p-8 md:p-12 shadow-sm border border-[#5bb8d8]">
+              <div className="text-center">
+                <h2 className="text-3xl md:text-5xl font-black text-white mb-6">
+                  Book Your Grooming Appointment
+                </h2>
+                <p className="text-white text-lg mb-6 max-w-2xl mx-auto">
                   Ready to schedule? Call or book online and we&apos;ll discuss what your pet needs.
                 </p>
-                <div className="space-y-4 mb-8">
-                  <a href="tel:+17639723647" className="block text-white hover:text-white/90 transition-colors">
-                    <span className="font-semibold text-lg">(763) 972-3647</span>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                  <a
+                    href="tel:+17639723647"
+                    className="text-white hover:text-white/90 transition-colors font-semibold text-lg"
+                  >
+                    (763) 972-3647
                   </a>
-                  <a href="mailto:Bubblesandbowsofdelano@gmail.com" className="block text-white hover:text-white/90 transition-colors">
-                    <span className="font-semibold">Bubblesandbowsofdelano@gmail.com</span>
+                  <span className="hidden sm:block text-white/60">•</span>
+                  <a
+                    href="mailto:Bubblesandbowsofdelano@gmail.com"
+                    className="text-white hover:text-white/90 transition-colors font-semibold"
+                  >
+                    Bubblesandbowsofdelano@gmail.com
                   </a>
                 </div>
                 <Link
                   href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="block w-full bg-white text-[#6bcbeb] px-8 py-3 rounded-[12px] font-bold text-center hover:bg-gray-100 transition-all duration-300 border-2 border-white"
+                  className="bg-white text-[#6bcbeb] px-8 py-3 rounded-[12px] font-bold hover:bg-gray-100 transition-all duration-300 inline-flex items-center border-2 border-white shadow-md"
                 >
-                  Book Now
+                  <span>Book Now</span>
                 </Link>
               </div>
             </div>

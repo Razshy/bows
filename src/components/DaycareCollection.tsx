@@ -1,6 +1,7 @@
 "use client";
 
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function DaycareCollection() {
     return (
@@ -13,10 +14,16 @@ export default function DaycareCollection() {
                         </h2>
                         <p className="text-sm text-gray-500 mt-2 font-medium">SAFE & FUN DAYCARE</p>
                     </div>
-                    <div className="md:w-1/3 md:text-right">
-                        <p className="text-gray-700 text-lg">
+                    <div className="md:w-1/2 md:text-right">
+                        <p className="text-gray-700 text-lg mb-4">
                             Safe, supervised fun for every pup.
                         </p>
+                        <Link
+                            href="/daycare"
+                            className="inline-block bg-[#6bcbeb] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5bb8d8] transition-colors"
+                        >
+                            Learn More
+                        </Link>
                     </div>
                 </div>
 
