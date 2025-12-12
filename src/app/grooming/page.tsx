@@ -34,8 +34,7 @@ export default function GroomingPage() {
                 </h1>
 
                 <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
-                  Expert grooming by Toni Brose with 22 years of experience.<br />
-                  From nail trims to full spa treatments.
+                  Expert grooming with patience and a gentle touch. We take the time to make sure your pup leaves happy and looking great!<br />
                 </p>
 
                 <Link

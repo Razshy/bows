@@ -16,7 +16,7 @@ const packages = [
     size: '4x4 suite',
     description: 'For calm, older pups who prefer a quiet routine.',
     perks: [
-      '4-6+ potty breaks daily',
+      '6-8+ potty breaks daily',
       'Meals on their schedule',
       'Soothing music',
       'Elevated bed included',
@@ -225,7 +225,6 @@ export default function BoardingPage() {
                   <p>Check in during business hours</p>
                   <p>Check out by 10 AM (after 10 AM a day stay fee is applied)</p>
                   <p>Temperament tests for group play</p>
-                  <p>Daily updates on request</p>
                 </div>
               </div>
 
