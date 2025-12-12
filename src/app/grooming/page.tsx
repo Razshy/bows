@@ -34,7 +34,8 @@ export default function GroomingPage() {
                 </h1>
 
                 <p className="text-gray-800 text-base mb-8 font-medium leading-relaxed">
-                  Expert grooming with patience and a gentle touch. We take the time to make sure your pup leaves happy and looking great!<br />
+                  Expert grooming with patience and a gentle touch.<br />
+                  We take the time to make sure your pup leaves happy and looking great!
                 </p>
 
                 <Link

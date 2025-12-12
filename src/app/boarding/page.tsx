@@ -202,7 +202,7 @@ export default function BoardingPage() {
                     href="https://bubblesandbows.mykcapp.com/CLIENTLOGIN"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="block w-full bg-gray-900 text-white px-6 py-3 rounded-[12px] font-bold text-center hover:bg-gray-800 transition-all"
+                    className="block w-full bg-[#b1f3ff] text-black px-6 py-3 rounded-[12px] font-medium hover:bg-[#ffda85] transition-all duration-300 text-center border-2 border-gray-300"
                   >
                     Reserve {pkg.name}
                   </Link>
