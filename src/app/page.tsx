@@ -145,13 +145,13 @@ export default function Home() {
                   Welcome to Our Family
                 </h2>
                 <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                  We're a family-owned pet grooming, boarding, and daycare here in Delano. We've been doing this for over 22 years now, and we still love it just as much as when we started.
+                  We&apos;re a family-owned pet grooming, boarding, and daycare here in Delano. We&apos;ve been doing this for over 22 years now, and we still love it just as much as when we started.
                 </p>
                 <p className="text-gray-700 mb-4 leading-relaxed text-lg">
-                  We're pet owners too, so we get how hard it is to find someone you really trust with your furry family. That's actually why we started this place. We wanted to create somewhere that treats every dog the way we'd want our own pets treated. Your pup isn't just another appointment to us, they're part of the family.
+                  We&apos;re pet owners too, so we get how hard it is to find someone you really trust with your furry family. That&apos;s actually why we started this place. We wanted to create somewhere that treats every dog the way we&apos;d want our own pets treated. Your pup isn&apos;t just another appointment to us, they&apos;re part of the family.
                 </p>
                 <p className="text-gray-700 leading-relaxed text-lg">
-                  We'd love to meet you and your dog! Feel free to stop by anytime and we'll show you around.
+                  We&apos;d love to meet you and your dog! Feel free to stop by anytime and we&apos;ll show you around.
                 </p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function Home() {
                 Happy Pups Gallery
               </h2>
               <p className="text-lg text-gray-600">
-                See some of the adorable pets we've had the pleasure of caring for
+                See some of the adorable pets we&apos;ve had the pleasure of caring for
               </p>
             </div>
 
@@ -378,7 +378,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-black mb-3 text-gray-900">Caring & Experienced Team</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Our team genuinely loves what we do. We're all pet owners ourselves, and we treat every dog like they're part of our own family.
+                  Our team genuinely loves what we do. We&apos;re all pet owners ourselves, and we treat every dog like they&apos;re part of our own family.
                 </p>
               </div>
 
@@ -396,7 +396,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-black mb-3 text-gray-900">Every Pet is Unique</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We know your dog has their own personality and preferences. Just let us know what makes them happy, and we'll make sure they feel right at home.
+                  We know your dog has their own personality and preferences. Just let us know what makes them happy, and we&apos;ll make sure they feel right at home.
                 </p>
               </div>
 
@@ -414,7 +414,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-black mb-3 text-gray-900">Fun & Comfort</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Whether your pup loves to play or prefers quiet time, we've got them covered. Active dogs get plenty of playtime, while our calmer friends enjoy peaceful rest areas.
+                  Whether your pup loves to play or prefers quiet time, we&apos;ve got them covered. Active dogs get plenty of playtime, while our calmer friends enjoy peaceful rest areas.
                 </p>
               </div>
             </div>
@@ -434,7 +434,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-black mb-3 text-gray-900">Quality Care, Fair Prices</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We believe great pet care shouldn't cost a fortune. You'll get the same love and attention we'd give our own pets, at prices that won't break the bank.
+                  We believe great pet care shouldn&apos;t cost a fortune. You&apos;ll get the same love and attention we&apos;d give our own pets, at prices that won&apos;t break the bank.
                 </p>
               </div>
 
@@ -452,7 +452,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-xl font-black mb-3 text-gray-900">Clean & Safe Environment</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We keep everything spotless and well-maintained. Your pet's health and safety are our top priorities, so you can have complete peace of mind.
+                  We keep everything spotless and well-maintained. Your pet&apos;s health and safety are our top priorities, so you can have complete peace of mind.
                 </p>
               </div>
 
@@ -468,9 +468,9 @@ export default function Home() {
                     />
                   </div>
                 </div>
-                <h3 className="text-xl font-black mb-3 text-gray-900">We've Been in Your Shoes</h3>
+                <h3 className="text-xl font-black mb-3 text-gray-900">We&apos;ve Been in Your Shoes</h3>
                 <p className="text-gray-600 leading-relaxed">
-                  We started Bubbles and Bows after our own frustrating experiences finding good pet care. We wanted to create the kind of place we'd trust with our own furry family members.
+                  We started Bubbles and Bows after our own frustrating experiences finding good pet care. We wanted to create the kind of place we&apos;d trust with our own furry family members.
                 </p>
               </div>
             </div>
