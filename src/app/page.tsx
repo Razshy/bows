@@ -55,7 +55,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-black text-center mb-4 text-gray-900">Daycare</h3>
                 <p className="text-gray-600 text-center mb-6 leading-relaxed flex-grow">
-                  Your pup enjoys a day of fun, frolic, and play. We provide tons of attention and care while you're gone for the day.
+                  Your pup enjoys a day of fun, frolic, and play. We provide tons of attention and care while you&apos;re gone for the day.
                 </p>
                 <div className="text-center">
                   <Link
@@ -107,7 +107,7 @@ export default function Home() {
                 </div>
                 <h3 className="text-2xl font-black text-center mb-4 text-gray-900">Boarding</h3>
                 <p className="text-gray-600 text-center mb-6 leading-relaxed flex-grow">
-                  Your pup enjoys a tailored overnight visit, allowing for a variety of suites and activities perfect for your pet's specific needs.
+                  Your pup enjoys a tailored overnight visit, allowing for a variety of suites and activities perfect for your pet&apos;s specific needs.
                 </p>
                 <div className="text-center">
                   <Link
@@ -487,7 +487,7 @@ export default function Home() {
               Ready To Give Your Pet The Best Care?
             </h2>
             <p className="text-xl text-white/95 mb-8">
-              Book your pet's stay with us today and experience the Bubbles and Bows difference
+              Book your pet&apos;s stay with us today and experience the Bubbles and Bows difference
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <Link
