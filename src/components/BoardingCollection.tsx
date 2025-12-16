@@ -30,7 +30,7 @@ export default function BoardingCollection() {
                 <div className="flex md:grid md:grid-cols-3 gap-6 md:gap-8 overflow-x-auto md:overflow-visible pb-8 md:pb-0 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0 scrollbar-hide">
                     {/* First Item */}
                     <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
-                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg border border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/room1.png"
                                 alt="Premium Suite"
@@ -44,7 +44,7 @@ export default function BoardingCollection() {
 
                     {/* Second Item */}
                     <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
-                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg border border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/room2.png"
                                 alt="Standard Room"
@@ -58,7 +58,7 @@ export default function BoardingCollection() {
 
                     {/* Third Item */}
                     <div className="pet-card group flex flex-col items-center min-w-[85%] md:min-w-0 snap-center">
-                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-[12px] border-2 border-gray-200 group-hover:border-[#6bcbeb] transition-all">
+                        <div className="relative w-full aspect-square mb-4 overflow-hidden rounded-lg border border-gray-200 group-hover:border-[#6bcbeb] transition-all">
                             <Image
                                 src="/boarding/stall.png"
                                 alt="Pup Patio"
