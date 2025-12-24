@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     siteName: "Bubbles & Bows",
     images: [
       {
-        url: "/og-image.jpg", // Put your image at public/og-image.jpg
+        url: "/og-image.png", // Put your image at public/og-image.jpg
         width: 1200,
         height: 630,
         alt: "Bubbles & Bows - Pet Grooming & Care",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bubbles & Bows | Pet Grooming & Care in Delano, MN",
     description: "Premium pet grooming, boarding, and daycare services in Delano, Minnesota. Family-owned with 22+ years of experience.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
