@@ -19,11 +19,10 @@ export default function Navbar() {
               <Image
                 src="/branding/logo.svg"
                 alt="Bubbles & Bows"
-                width={36}
-                height={36}
-                className="mr-2"
+                width={180}
+                height={50}
+                className="h-10 w-auto"
               />
-              <span className="text-xl font-bold text-gray-800">Bubbles & Bows</span>
             </Link>
           </div>
 

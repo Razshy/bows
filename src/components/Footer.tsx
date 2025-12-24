@@ -21,11 +21,10 @@ export default function Footer() {
                 <Image
                   src="/branding/logo.svg"
                   alt="Bubbles & Bows"
-                  width={40}
-                  height={40}
-                  className="mr-2"
+                  width={200}
+                  height={55}
+                  className="h-12 w-auto"
                 />
-                <span className="text-xl font-bold text-gray-800">Bubbles & Bows</span>
               </Link>
               <p className="text-gray-600 mb-6 max-w-xs">
                 Premium pet grooming, boarding and daycare services for your furry friends. We treat your pets like family.
